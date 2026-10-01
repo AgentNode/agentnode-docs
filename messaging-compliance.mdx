@@ -1,0 +1,57 @@
+---
+title: "SMS Compliance for Real Estate Agents Using AgentNode"
+sidebarTitle: "Compliance"
+description: "Understand your compliance responsibilities when using AgentNode for SMS outreach, including TCPA consent, opt-out handling, and messaging restrictions."
+---
+
+SMS marketing in real estate is regulated at the federal level by the Telephone Consumer Protection Act (TCPA), and state laws may impose additional requirements. AgentNode is built with compliance in mind — it automatically processes opt-outs, records consent at import, and enforces the sending schedule you configure. Even so, you as the AgentNode customer are the sender of every message and are legally responsible for how you use the platform. Understanding your obligations is a core part of using AgentNode responsibly.
+
+## Your responsibilities
+
+As the sender of every message AgentNode transmits on your behalf, you are responsible for the following:
+
+<CardGroup cols={2}>
+  <Card title="Contact consent" icon="user-check">
+    Only import contacts you have a prior business relationship with or who have given you consent to receive SMS messages. Do not use purchased, rented, scraped, or third-party lead lists unless you can document that each recipient specifically consented to messages from you.
+  </Card>
+  <Card title="Honouring opt-outs" icon="ban">
+    AgentNode automatically processes STOP replies and removes those contacts from all outreach. You must also honour opt-out requests received outside of AgentNode — through email, phone, or in person — and remove those contacts manually.
+  </Card>
+  <Card title="Sending hours" icon="clock">
+    Configure your sending window in Settings to avoid contacting leads during restricted hours. Federal and state law limits when you can send marketing texts. AgentNode will only send within the window you set — so keeping that window accurate is your responsibility.
+  </Card>
+  <Card title="Consent records" icon="scale">
+    Keep records of how and when each contact gave consent to receive messages from you. Under the TCPA, you may need to produce those records in a dispute. AgentNode records the timestamp and source of consent at import, but maintaining the underlying documentation is up to you.
+  </Card>
+</CardGroup>
+
+## Consent at import
+
+When you import a CSV into AgentNode, you are asked to confirm that your contact list has the appropriate consent for SMS outreach before the import is finalised. AgentNode records the time and source of that confirmation as your consent attestation for the batch.
+
+This confirmation is not a formality. By importing a list, you are representing that every contact on it has consented to receive texts from you — or that you have a prior business relationship that provides a lawful basis for contact. If that is not true for every contact, do not import them.
+
+## Opt-out handling
+
+When a lead replies **STOP** to any message sent through AgentNode, the platform processes the opt-out immediately and permanently. That contact is suppressed across all campaigns and outreach — AgentNode will not send them another message.
+
+Opt-outs cannot be overridden or reversed unless the contact subsequently provides fresh, documented consent. AgentNode will not re-enrol an opted-out contact automatically. If a lead genuinely re-engages and consents again, you will need to add them back with the appropriate consent documented.
+
+## Calling restrictions
+
+AgentNode is an SMS and text messaging platform. If calling features are available on your account, they are subject to separate compliance rules including federal and state telemarketing laws, do-not-call requirements, and calling-hour restrictions.
+
+If you use call recording features, you are responsible for disclosing the recording to all parties before it begins. Recording-consent requirements vary significantly by state — some require only one party to consent, others require all parties. You are solely responsible for determining what applies in your state and ensuring the required disclosures are made on every recorded call.
+
+## Real estate-specific restrictions
+
+AgentNode is designed for licensed real estate professionals conducting legitimate lead follow-up in connection with their real estate business. A few additional restrictions apply specifically to real estate use:
+
+- **Use within your licensed activity** — do not use AgentNode for purposes outside your licensed real estate activity. Using it to contact leads on behalf of unrelated businesses, or to send messages unconnected to your real estate practice, is not a permitted use.
+- **Fair housing compliance** — do not use AgentNode in any way that could constitute steering, discrimination, or exclusion on the basis of a protected class. This includes targeting, routing, or messaging decisions that could violate fair housing laws. You are solely responsible for ensuring your campaigns and contact practices comply with the Fair Housing Act and applicable state equivalents.
+
+<Warning>
+  AgentNode processes opt-outs automatically, but you are legally responsible for your contact list. Never import contacts who have previously asked not to be contacted.
+</Warning>
+
+For AgentNode's full legal terms, including the scope of your compliance obligations and AgentNode's limitations as a service provider, see the [Privacy Policy and Terms of Service](/privacy-and-terms).

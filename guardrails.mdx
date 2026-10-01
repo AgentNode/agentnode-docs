@@ -1,0 +1,45 @@
+---
+title: "Guardrails: How AgentNode Knows When to Hand Off"
+sidebarTitle: "Guardrails"
+description: "AgentNode's guardrails ensure the AI only responds when it's confident, and escalates every other conversation to you in the Needs You queue."
+---
+
+Guardrails are the built-in safety boundaries that tell AgentNode when to keep going and when to stop. Whenever a conversation moves into territory that needs a licensed professional, a clear human decision, or anything the AI isn't confident about, AgentNode stops replying and hands the thread to you — before it has a chance to say the wrong thing. You stay in control of every conversation that matters most.
+
+## What triggers a hand-off
+
+Any of these situations will cause AgentNode to stop and escalate the conversation to your Inbox:
+
+<CardGroup cols={2}>
+  <Card title="Unexpected reply" icon="circle-question">
+    The lead says something outside what the campaign was designed to handle — a topic, question, or direction the AI wasn't set up to respond to.
+  </Card>
+  <Card title="Booking request" icon="calendar-check">
+    A lead is ready to book and needs calendar confirmation. AgentNode flags it so you can lock in the appointment directly.
+  </Card>
+  <Card title="Sensitive topic" icon="shield">
+    The lead raises a subject that requires a licensed professional's response — such as price, commission, contracts, legal questions, or property condition.
+  </Card>
+  <Card title="Direct question" icon="message-question">
+    The lead asks something specific that AgentNode cannot answer with confidence, rather than risk giving an incorrect or misleading reply.
+  </Card>
+</CardGroup>
+
+## How escalation works
+
+When AgentNode decides a conversation needs you, here's exactly what happens:
+
+1. **AgentNode stops replying** to that thread immediately. No further automated messages are sent while it's waiting for you.
+2. **The conversation appears in Needs You** — the left column of your Inbox — so it's the first thing you see when you open AgentNode.
+3. **You see the full context** — the lead's history, what they asked, and why the conversation was escalated, so you can jump in without needing to catch up.
+4. **You respond directly** from within AgentNode. Once you've handled it, you can switch the AI back on for that thread and AgentNode will resume from where it left off — or keep it in manual mode if you'd prefer to stay in the driving seat.
+
+## Consent and escalation at import
+
+AgentNode only contacts leads you have imported. When you upload a CSV, you confirm that the contacts in that file are people you have a legitimate prior business relationship with or who have otherwise given consent to be contacted. That record is tied to your account from the moment of import.
+
+This means AgentNode never reaches out to someone you haven't explicitly brought into the platform — and every conversation it starts has a documented consent basis behind it.
+
+<Note>
+  AgentNode errs on the side of caution. If it isn't confident, it stops and asks you — it never guesses at sensitive real-estate questions or legal matters.
+</Note>

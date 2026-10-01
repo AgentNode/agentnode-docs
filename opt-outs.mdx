@@ -1,0 +1,39 @@
+---
+title: "Opt-Outs: How STOP Replies Are Handled"
+sidebarTitle: "Opt-Outs"
+description: "Learn how AgentNode processes opt-out requests, what happens to opted-out contacts, and how to stay compliant with SMS messaging regulations."
+---
+
+Opt-outs in AgentNode are automatic and permanent. The moment a lead replies with an opt-out keyword, AgentNode removes them from all messaging immediately — no delay, no manual step required on your end. You don't need to manage a suppression list yourself; AgentNode tracks opt-out status across your entire account and enforces it everywhere.
+
+## How opt-outs work
+
+1. The lead replies with **STOP**, UNSUBSCRIBE, CANCEL, END, or QUIT
+2. AgentNode registers the opt-out immediately upon receiving the reply
+3. The contact is flagged as opted out across your entire account — not just the campaign they replied to
+4. No campaign — current or future — can pick them up or send them a message
+5. No manual outreach to that number is possible through AgentNode
+
+This process happens in real time and requires no action from you.
+
+## Where opted-out contacts appear
+
+Opted-out contacts remain visible in your **Contacts** list. They are clearly marked so you can see their status at a glance. Their full conversation history is preserved and accessible — you can review past messages any time. The only thing you cannot do is send them a new message through AgentNode.
+
+## Why this matters
+
+SMS opt-out compliance is a legal requirement under the Telephone Consumer Protection Act (TCPA). Failing to honour a STOP request — or attempting to contact that person again without documented renewed consent — can result in significant fines and legal exposure. AgentNode handles opt-outs automatically so you're protected without needing to track them manually, but understanding how the system works helps you stay compliant at every stage.
+
+<Warning>
+  Never attempt to contact an opted-out lead through another number or channel to circumvent the opt-out. This violates federal messaging laws and AgentNode's Terms of Service.
+</Warning>
+
+## Consent at import
+
+Opt-out protection starts before a single message is sent. When you import a CSV, you confirm that every contact in that file is someone you have a legitimate prior business relationship with, or who has given consent to be contacted. Only import contacts who meet that standard — AgentNode's compliance tools work best when your list is clean going in.
+
+If a contact has already told you they don't want to hear from you — through any channel — don't import them. Opt-out records outside AgentNode don't automatically sync into the platform.
+
+<Tip>
+  Review your import list before uploading. AgentNode deduplicates rows, but it's good practice to remove known opt-outs from your CSV before importing.
+</Tip>

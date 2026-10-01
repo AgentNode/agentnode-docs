@@ -1,0 +1,71 @@
+{
+  "projectType": "saas",
+  "projectName": "AgentNode",
+  "projectDescription": "AgentNode is an AI-powered SMS follow-up platform for real estate agents that automatically texts dormant leads, keeps conversations going, and hands off to the agent the moment a human response is needed.",
+  "theme": "luma",
+  "primaryColor": "#4f46e5",
+  "lightColor": "#a49cf4",
+  "darkColor": "#0c142c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "account-setup"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "inbox",
+              "contacts",
+              "campaigns"
+            ]
+          },
+          {
+            "group": "AI & Messaging",
+            "pages": [
+              "ai-messaging",
+              "guardrails",
+              "opt-outs"
+            ]
+          },
+          {
+            "group": "Settings & Compliance",
+            "pages": [
+              "settings",
+              "messaging-compliance",
+              "privacy-and-terms"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-drafted personalised SMS follow-ups for dormant leads",
+    "Automatic conversation handling with human escalation guardrails",
+    "CSV contact import with column mapping and deduplication",
+    "Campaign engine for ongoing automated outreach to contact groups",
+    "Inbox with Needs You, Conversations, and Bookings columns",
+    "Contact tagging and segmentation",
+    "On-demand CMA generator",
+    "Opt-out tracking and consent management",
+    "Calendar booking integration"
+  ],
+  "publicApiSurface": [
+    "Import CSV (contact import flow)",
+    "Add Contact",
+    "Reach Out (one-off text to one or more contacts)",
+    "New Campaign",
+    "Campaign tabs: Overview, Recent Messages, Contacts, Context",
+    "Pause / Resume / Stop Campaign",
+    "Inbox: Needs You, Conversations, Bookings",
+    "Settings: account, phone number, messaging preferences"
+  ]
+}
