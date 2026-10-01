@@ -28,10 +28,10 @@ Welcome to the AgentNode documentation. AgentNode is an AI-powered SMS follow-up
     Create your account and tell AgentNode two things: what you message leads about and when you want messages sent. You can update both at any time in **Settings**.
   </Step>
   <Step title="Import your contacts">
-    Export your existing database from your CRM or spreadsheet as a CSV and upload it from the Inbox. AgentNode reads names, phone numbers, and any notes you include. At import you confirm that these are contacts you have a prior relationship with — that record is stored on file.
+    Export your existing database from your CRM or spreadsheet as a CSV and use **Import CSV** from the Inbox. AgentNode reads names, phone numbers, and any notes you include. At import you confirm that these are contacts you have a prior relationship with — that record is stored on file. AgentNode then asks what you want to do with the contacts you just brought in.
   </Step>
   <Step title="AI sends personalised texts in your voice">
-    AgentNode drafts an individual follow-up message for every lead, drawing on what you know about them and current market conditions in their area. Messages go out on your configured schedule, and AgentNode handles replies automatically.
+    AgentNode drafts an individual follow-up message for every lead, drawing on what you know about them and current market conditions in their area. Campaigns run automatically on your configured schedule — AgentNode sends the opener, answers straightforward replies, and keeps the conversation moving without waiting on you.
   </Step>
   <Step title="You take over when it matters">
     Whenever a conversation reaches a question AgentNode can't answer — pricing, contracts, or anything unclear — it stops, flags the reason, and surfaces the thread at the top of your **Needs You** queue. You pick up the conversation exactly where it left off.
@@ -40,15 +40,18 @@ Welcome to the AgentNode documentation. AgentNode is an AI-powered SMS follow-up
 
 ## What's included
 
-<CardGroup cols={3}>
+<CardGroup cols={2}>
   <Card title="AI Messaging" icon="robot">
-    AgentNode writes a personalised follow-up for each lead in your voice, so every contact gets a message that feels like it came from you.
+    AgentNode writes a personalised follow-up for each lead in your voice, drawing on what you know about them and conditions in their area — so every contact gets a message that feels like it came from you.
+  </Card>
+  <Card title="Campaigns" icon="paper-plane">
+    A campaign is an automated job that runs for a set of contacts. Set it up once and AgentNode keeps working it — sending openers, answering replies, and adding new contacts as they come in — until you pause or stop it.
   </Card>
   <Card title="Guardrails" icon="shield-check">
-    Built-in guardrails detect questions AgentNode shouldn't answer and escalate those conversations to you instantly, keeping you in control of every sensitive topic.
+    Built-in guardrails detect questions AgentNode shouldn't answer — pricing, contracts, anything unclear — and escalate those conversations to you instantly, keeping you in control of every sensitive topic.
   </Card>
   <Card title="Opt-Out Management" icon="ban">
-    Any contact who replies STOP is removed from your active queue immediately, and their status is permanently logged so they're never messaged again.
+    Any contact who replies STOP is opted out straight away. AgentNode never texts them again, and no campaign can pick them up. Their status is permanently logged so they're never messaged again.
   </Card>
 </CardGroup>
 

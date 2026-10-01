@@ -1,5 +1,5 @@
 ---
-title: "Opt-Outs: How STOP Replies Are Handled"
+title: "Opt-Outs: How STOP Requests Are Handled in AgentNode"
 sidebarTitle: "Opt-Outs"
 description: "Learn how AgentNode processes opt-out requests, what happens to opted-out contacts, and how to stay compliant with SMS messaging regulations."
 ---
@@ -8,11 +8,20 @@ Opt-outs in AgentNode are automatic and permanent. The moment a lead replies wit
 
 ## How opt-outs work
 
-1. The lead replies with **STOP**, UNSUBSCRIBE, CANCEL, END, or QUIT
-2. AgentNode registers the opt-out immediately upon receiving the reply
-3. The contact is flagged as opted out across your entire account — not just the campaign they replied to
-4. No campaign — current or future — can pick them up or send them a message
-5. No manual outreach to that number is possible through AgentNode
+<Steps>
+  <Step title="Lead sends an opt-out keyword">
+    The lead replies with **STOP**, UNSUBSCRIBE, CANCEL, END, or QUIT.
+  </Step>
+  <Step title="AgentNode registers the opt-out immediately">
+    The opt-out is recorded the moment the reply is received — no delay, no manual step required on your end.
+  </Step>
+  <Step title="The contact is flagged account-wide">
+    Their opt-out status applies across your entire account, not just the campaign they replied to.
+  </Step>
+  <Step title="All future messaging is blocked">
+    No campaign — current or future — can pick them up or send them a message. No manual outreach to that number is possible through AgentNode.
+  </Step>
+</Steps>
 
 This process happens in real time and requires no action from you.
 
