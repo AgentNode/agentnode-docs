@@ -1,10 +1,12 @@
 ---
 title: "Campaigns: Automated Lead Outreach for Real Estate Agents"
 sidebarTitle: "Campaigns"
-description: "A Campaign runs continuous automated outreach for a defined group of contacts. Learn how to create, manage, pause, and stop campaigns in AgentNode."
+description: "A campaign is an ordered list of timed steps — texts, waits, to-dos and dates — that AgentNode runs for every contact on it. Learn how to create, edit, pause and stop campaigns."
 ---
 
-A campaign is an automated job that runs for a set of contacts. You tell AgentNode what you want it to do and who it should run for, and the campaign keeps doing it — for the contacts it names, and for anyone added later — until you stop it. Think of it as a standing instruction: set it once, and AgentNode handles the ongoing outreach while you focus on the conversations that need you.
+A campaign is an automated job that runs for a set of contacts. You tell AgentNode what you want it to do and who it should run for, and the campaign keeps doing it — for the contacts it names, and for anyone added later — until you stop it.
+
+It works the way an action plan does: an ordered list of **steps** with timing — a text, a wait, a to-do for you, a date like a birthday — that runs on its own for each person from the day they join. Set it once, and AgentNode works every step for every contact while you focus on the conversations that need you.
 
 <Info>
   **Example:** Past clients — check in with each of them every three months.
@@ -20,34 +22,71 @@ A campaign is an automated job that runs for a set of contacts. You tell AgentNo
     Type your instruction in plain language — for example, "Check in with past clients every 3 months" or "Follow up with cold leads who haven't responded in 60 days."
   </Step>
   <Step title="Choose who it runs for">
-    Select individual contacts or a tag group. The campaign will run for every contact in that selection.
+    Select individual contacts or a tag. The campaign runs for every contact in that selection, and for anyone added later.
+  </Step>
+  <Step title="Check the steps AgentNode built">
+    AgentNode turns your instruction into steps and the template for each text — an opener, a follow-up, a check-in every three months. Change any of them on the **Steps** tab.
   </Step>
   <Step title="Answer any follow-up questions">
-    The campaign opens on its chat and asks for anything else it needs to get started — for example, birthdays if you want personalised anniversary messages.
+    The campaign opens on its chat and asks for anything else it needs — for example, birthdays if a step lands on them.
   </Step>
   <Step title="The campaign starts running">
-    Once you've answered its questions, the campaign begins automatically. No further action is needed.
+    Each contact starts at the first step the day they join. No further action is needed.
   </Step>
 </Steps>
 
+## Steps and templates
+
+A campaign is its steps, in order, each with its timing.
+
+| Step | What it does |
+|---|---|
+| Text | Sends a text, written from its template. |
+| Wait | Waits a number of days before the next step. |
+| To-do | Reminds you to do something yourself — call them, say — and waits until you have. |
+| Date | Lands on a date of theirs, like a birthday or the anniversary of their purchase. |
+
+A step can repeat — every three months — and a campaign's first step can be a text on the day someone joins, so adding a contact reaches out right away.
+
+Each text step has a **template**: the text "like this", with the parts AgentNode fills in for each person. The campaign says whether its texts go out in AgentNode's words from the template — written for the person, in your voice — or exactly as written.
+
+## Who presses send
+
+Each campaign says who presses send on its texts.
+
+<Tabs>
+  <Tab title="Sends on its own">
+    Every text goes at its moment. This is the default.
+  </Tab>
+  <Tab title="Approves the first text with you">
+    The first text to each person waits for you; the rest go on their own. You keep control of the first touch without reading the fourth follow-up.
+  </Tab>
+  <Tab title="Waits for you">
+    Every text waits for you.
+  </Tab>
+</Tabs>
+
+**Settings › Messaging** has the same choice as the default for every campaign, and the stricter of the two holds. A held text waits in the Inbox under **Ready to send**, where one press sends it.
+
 ## The campaign workspace
 
-Each campaign has four tabs that give you a full picture of what's happening.
+Each campaign has five tabs that give you a full picture of what's happening.
 
-| Tab | What It Shows |
+| Tab | What it shows |
 |---|---|
 | Overview | What you asked for and how it's going: who's on it, what it sent, who replied, who booked. |
-| Recent Messages | The texts it has sent and the replies it has received. |
+| Steps | Each step with its timing and its template. Edit them here. |
+| Recent messages | The texts it has sent and the replies it has received. |
 | Contacts | Who is on it, and who it removed and why. |
 | Context | Its files, and the live sources it can look things up in. |
 
-The campaign's chat is always beside these tabs. Tell it to change course there — update its tone, shift its focus, or give it new information to work with.
+The campaign's chat is always beside these tabs. Tell it to change course there — add a step, shorten a wait, warm up a template, or give it new information to work with.
 
-A campaign never texts anyone itself. Each contact's [weave](/weave) takes every campaign they are on and turns them into one conversation, so a person on three campaigns still gets one natural thread of texts.
+A campaign never texts anyone itself. Each contact's [weave](/weave) takes the steps of every campaign they are on and turns them into one conversation, so a person on three campaigns still gets one natural thread of texts — never two on one day.
 
 ## Adjusting a campaign
 
-You don't need to stop a campaign to change how it behaves. Use the campaign chat to update its instructions at any time — mid-flight. Tell it to message less frequently, adopt a warmer tone, or start asking leads a different question. The campaign picks up your new instructions and applies them going forward without interrupting conversations already in progress.
+You don't need to stop a campaign to change it. Edit a step or its template on the **Steps** tab, or tell the chat what to change — message less often, adopt a warmer tone, ask a different question. Changes apply from each person's next step; nothing already sent changes.
 
 ## Pausing and stopping
 
@@ -66,8 +105,8 @@ You don't need to stop a campaign to change how it behaves. Use the campaign cha
 
 ## Adding contacts to a running campaign
 
-You don't need to stop or restart a campaign to include new contacts. Any contacts you add after a campaign is already running are automatically picked up and included in the outreach. This means a tag-based campaign grows naturally as you add new contacts with that tag.
+You don't need to stop or restart a campaign to include new contacts. Anyone you add after a campaign is already running starts at its first step. This means a tag-based campaign grows naturally as you add new contacts with that tag.
 
 <Tip>
-  Use the campaign chat to refine your instructions over time. The more context you give, the more personalised the outreach.
+  Use the campaign chat to refine its steps over time. The more context you give, the more personalised the outreach.
 </Tip>
