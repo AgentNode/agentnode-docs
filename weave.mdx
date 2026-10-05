@@ -1,0 +1,56 @@
+---
+title: "Weave: One Conversation per Contact, From Every Campaign"
+sidebarTitle: "Weave"
+description: "Weave is how AgentNode turns the campaigns a contact is on into one natural conversation: it decides what to send, when, and whether two messages should become one."
+---
+
+You set up campaigns. Each contact has a **weave**: AgentNode takes every campaign they are on and weaves them into one conversation, in your voice, from your number. A birthday text lands on the day. A check-in and a listing update that fall in the same week become one message. Nobody gets two texts because two campaigns asked.
+
+<Info>
+  **Example:** Sarah is on *Past clients* and *Birthdays*. Her weave sends one text on her birthday that also asks how the house is treating her, then goes quiet until the next check-in is due.
+</Info>
+
+## What the weave decides
+
+For each contact, the weave reads their record, their conversation so far, and every campaign they are on, and works out:
+
+| | |
+| --- | --- |
+| **What** | The next thing to say, written for this person and shaped by the campaign's templates. |
+| **When** | A moment a person would pick: inside your sending hours, at least an hour after the last text, and on the day for dated things like birthdays. |
+| **Whether to combine** | Two asks that sit together become one text. |
+| **Order** | A reply to what the contact just said comes before anything a campaign has queued. |
+| **Whether to stop** | If a campaign no longer makes sense for them — they already sold, say — the weave takes them off it and says why in the campaign's activity. |
+
+## Where you see it
+
+Open a contact. Their page opens on the **Weave** tab:
+
+- **Current aim** — what AgentNode is working towards with this person, and the campaigns working them.
+- **Steps** — what it has done, ticked off, and what comes next, numbered, each with its day, time, and the text it plans to send.
+- **Correct the weave** — a box at the foot. Type "slow down", "I will call instead", or "stop after the next one", and the steps rewrite themselves.
+
+The **Conversation** tab shows the next text from the weave above the reply box, with **Send now instead** if you would rather send it yourself.
+
+## Auto-send
+
+Each weave has an **Auto-send** switch over its steps, on by default.
+
+<Tabs>
+  <Tab title="Sends on schedule">
+    Every step sends itself at its moment. This is the default.
+  </Tab>
+  <Tab title="Waits for your approval">
+    Every planned text waits in your Inbox for you to read and send. Nothing goes out on its own for this contact.
+  </Tab>
+</Tabs>
+
+**Settings › Messaging** has the same switch for everyone. Turn it off there and every contact's texts wait for you, whatever their own switch says.
+
+## Pausing
+
+**Pause** sits beside Auto-send. A paused weave plans nothing and sends nothing for that contact until you resume it. Pausing a campaign pauses its part in every contact's weave; pausing a contact pauses only theirs.
+
+<Note>
+  Correcting a weave is a one-off instruction, not a chat. AgentNode's questions for you land in the Inbox under **Needs you**, not here. What you say in a correction — what you like, what to avoid — is remembered for every contact.
+</Note>

@@ -37,7 +37,8 @@
             "pages": [
               "inbox",
               "contacts",
-              "campaigns"
+              "campaigns",
+              "weave"
             ]
           },
           {
