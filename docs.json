@@ -33,12 +33,12 @@
             ]
           },
           {
-            "group": "Core Features",
+            "group": "The App",
             "pages": [
+              "operator",
               "inbox",
               "contacts",
-              "campaigns",
-              "weave"
+              "assistants"
             ]
           },
           {
@@ -68,5 +68,15 @@
     "body": {
       "family": "DM Sans"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/campaigns",
+      "destination": "/assistants"
+    },
+    {
+      "source": "/weave",
+      "destination": "/ai-messaging"
+    }
+  ]
 }
