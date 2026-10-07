@@ -1,51 +1,57 @@
 ---
-title: "How AgentNode Drafts Personalised SMS for Every Lead"
+title: "How AgentNode Writes and Sends Every Text"
 sidebarTitle: "AI Messaging"
-description: "AgentNode's AI reads each lead's history and context to draft personalised SMS messages in your voice, then sends and manages replies on your behalf."
+description: "How AgentNode's assistants write texts in your voice, answer replies, weave every text into the conversation, and decide who presses send."
 ---
 
-AgentNode handles your outreach by reading what you know about each lead — their name, any notes you've added, the campaign you've set up, and the full history of your conversations — then drafting a text that sounds like it came from you personally. Once a campaign is running, the AI sends messages on your cadence and keeps replies going without you needing to step in, unless it reaches something only you should handle.
+Every text AgentNode sends is written for one person, from what you know about them, what they have said, and how you like the job done. Once an assistant is on a lead, it sends on its own schedule and answers what comes back without waiting on you, unless it reaches something only you should handle.
 
-## What the AI works from
+## What a text is written from
 
-Every message AgentNode drafts draws on a combination of sources:
+- **The job's template and your working preferences**: what the job says and how you like it done, including preferences aimed at a tag, a source or a list.
+- **Your realtor profile**: who you are, your market, and how you sound.
+- **The lead's record**: their name, notes, where they came from, and what the tag they carry says assistants should know.
+- **The conversation so far**: every text and reply on the thread, and what the assistant has learned about them.
 
-- **Your messaging preferences** — what topics you message leads about and when you prefer to send, set in Settings
-- **The lead's name, number, and notes** — whatever you included or imported with their contact record
-- **The campaign's instructions** — the goal and tone you described when you set the campaign up
-- **Previous conversation history** — every prior message and reply AgentNode has on file for that lead
-- **Files and live sources from the Context tab** — any documents, listings, or external sources you've attached to the campaign
+The more of this you provide, the more natural each text reads to the person receiving it.
 
-The more of this detail you provide upfront, the more relevant and natural each message will feel to the person receiving it.
+## Auto-reply
 
-## AI-drafted messages vs. your messages
+Every text a lead sends is answered, whoever looks after them. Auto-reply reads the thread, the lead's record and the assistant's memory, and answers within a minute in your hours when it is sure enough. It books the time a lead agrees to, records what a reply settles, and leaves a draft for you when it is not sure. A lead who asks about price, contracts or legal matters, is upset, or suspects they are texting a machine, is handed to you: automatic replies stop on that thread until you hand it back. See [Guardrails](/guardrails).
 
-How messages get drafted and sent depends on how you're reaching out.
+## The weave
 
-**In a campaign**, AgentNode operates autonomously. It handles the opener, follows up on replies, and keeps the conversation moving — all without waiting on you. You set the campaign up once and it runs from there.
+Every outbound text passes through the **weave** before it goes, whoever wrote it: an assistant, Auto-reply, or you. The weave reads the conversation so far and fits the text into it. If the last text said "Hi, I'm Josh with Acme" and the next one opens the same way, it cuts the introduction. It smooths the join when a text does not follow from the last thing said, so your texts read as one person texting: human, natural, coherent.
 
-**In a one-off Reach Out**, you have more direct control. You can write the message yourself, or ask the AI to draft one based on what it knows about the lead. Before anything is sent in one-off mode, you have the option to review and edit the draft — nothing goes out until you're ready.
+It never adds anything. The text's ask, its names, and every number, date, time, price and link stay as written, and after a long silence a fresh hello is left alone. The first text in a conversation is sent as written, and so is a text you looked at and sent anyway after a hold. The thread always shows exactly what went.
 
-In both cases, AgentNode stops and escalates to you the moment a reply falls outside what it can confidently handle.
+## Who presses send
+
+Each job's setup says whether its texts send on their own or wait for you. On top of that, **Settings › Messaging** has one rule: **Always approve the first text to a new contact**. With it on, the opener waits in your Inbox until you approve it, whatever the job says, and follow-ups send as usual.
+
+A text AgentNode was not sure enough to send waits in the Inbox too, with the reason, and you can send it, edit it, or discard it. See [the Inbox](/inbox).
+
+## When texts go
+
+- Nothing sends in **quiet hours**; a text due then waits for morning.
+- One scheduled text a day per person, and an hour between texts while they say nothing. Answers to a reply are not held back.
+- A job's texts hold while the lead is talking with Auto-reply or has a meeting booked, and pick up once the thread has been quiet for a few days.
+- Nobody gets two texts because two jobs asked.
 
 ## Personalisation
 
-AgentNode doesn't send generic follow-ups. It uses the lead's context — their neighbourhood, the time since you last spoke, anything notable from previous conversations — to write something that feels like a genuine, timely check-in rather than a broadcast message.
+AgentNode does not send generic follow-ups. Here is how a typical exchange can look:
 
-Here's how a typical automated exchange can look:
+> "Hi Marcus, thinking of you. The market in Eastside has shifted quite a bit since we last spoke. Worth a quick catch-up?" *(sent by Lead Nurture)*
 
-> "Hi Marcus — thinking of you. The market in Eastside has shifted quite a bit since we last spoke. Worth a quick catch-up?" *(sent automatically)*
+> "Oh wow, yeah, we've actually been thinking about it lately."
 
-> "Oh wow, yeah — we've actually been thinking about it lately."
-
-> "Great to hear. I have Thursday at 2:00 or Friday morning free — which suits you?" *(sent automatically)*
-
-The lead receives a message that references their area and the gap since your last contact. AgentNode follows their reply with a natural next step — all without you needing to write a word.
+> "Great to hear. I have Thursday at 2:00 or Friday morning free. Which suits you?" *(sent by Auto-reply)*
 
 ## On-demand CMA generator
 
-When a conversation heats up and a lead wants to know what's happening in their local market, AgentNode can generate a Comparative Market Analysis on demand. This gives you — and the AI — relevant, current market data to share during the conversation, so you're ready with real context before you even pick up the phone.
+When a lead wants to know what is happening in their local market, AgentNode can generate a Comparative Market Analysis on demand, so you and the assistant have current data to share before you pick up the phone.
 
 <Tip>
-  The more context you give in the campaign chat and in lead notes, the more personalised and effective the AI's messages will be.
+  The AI logo on any sent text opens a box for what to correct, or why it was wrong. What you say there is remembered for every assistant.
 </Tip>

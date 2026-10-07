@@ -1,50 +1,62 @@
 ---
-title: "Contacts: Import, Organise, and Reach Out to Your Leads"
+title: "Contacts: Import Leads, Connect Your Sources, and Tag People"
 sidebarTitle: "Contacts"
-description: "Import leads by CSV, add contacts one at a time, tag them for filtering, and reach out or assign them to campaigns straight from your contacts list."
+description: "Import leads by CSV, add contacts one at a time, connect the places leads come from under Contact flows, and tag people so your assistants know how to treat them."
 ---
 
-Contacts is where all of your imported leads live. Every person you've brought into AgentNode appears here — complete with their tags, the campaigns they're enrolled in, and their full conversation history right beside them. It's your single view of the people AgentNode is working on your behalf.
+Contacts is where everyone you have brought into AgentNode lives, with their tags, who looks after them, and their conversation right beside them. The top bar has two tabs: **Contacts**, with how many people there are, and **Contact flows**, the places new leads come from.
 
-Open any contact and their page opens on their [weave](/weave): what AgentNode is aiming for with them, what it has done, and the texts it plans to send next, woven from every campaign they are on.
+Open any contact and their page shows their details, their **owner** (Lead Nurture, Client Relations, or you), the jobs they are in with each job's next step, and their conversation.
+
+## Who looks after whom
+
+Every lead has exactly one owner. AgentNode picks it from where the lead came from and what you have told it, and writes down why. Change it on the lead's page, at the head of **About**, and your choice holds. Leads who opt out are looked after by nobody.
 
 ## Importing a CSV
 
 <Steps>
   <Step title="Export your contacts">
-    Pull a CSV export from your CRM, spreadsheet, or lead source. AgentNode accepts files of any size, so you don't need to split large lists.
+    Pull a CSV export from your CRM, spreadsheet, or lead source. AgentNode accepts files of any size, so you do not need to split large lists.
   </Step>
-  <Step title="Open Import CSV">
-    From the Inbox, click **Import CSV** in the quick-actions bar. You can also go directly to the Contacts page and click **Import CSV** there.
+  <Step title="Upload it from Contacts">
+    Click **Add contact** and choose a CSV, or open the **Contact flows** tab and add a **CSV or Google Sheet** flow, which watches the sheet and imports new rows as they appear.
   </Step>
   <Step title="Map the columns">
-    Tell AgentNode which column is the name, which is the phone number, and which columns contain notes or context it should know about. AgentNode remembers your mapping, so future imports from the same format are one click.
+    Tell AgentNode which column is the name, which is the phone number, and which columns hold notes it should know about. It remembers your mapping, so future imports from the same format are one click.
   </Step>
-  <Step title="Choose what happens next">
-    When the import finishes, AgentNode asks what you'd like to do with these contacts: reach out to them now, add them to an existing campaign, or do nothing yet and let them sit in your list until you're ready.
+  <Step title="Confirm consent">
+    Confirm that these are people you have a prior relationship with. That record is stored on file, and nobody is texted without it.
   </Step>
 </Steps>
 
 <Note>
-  AgentNode deduplicates rows automatically — if a phone number already exists in your contacts, it won't create a second record.
+  AgentNode deduplicates rows automatically. If a phone number already exists in your contacts, it does not create a second record.
 </Note>
 
 ## Adding a single contact
 
-Click **Add contact** to bring in one person without a CSV. The process is two steps: first, fill in who they are — their name, phone number, and any notes you want AgentNode to know about them. Second, tell AgentNode what to do with them right away: send a first text now, add them to one or more campaigns, do both, or do nothing yet and leave them in your list.
+Click **Add contact** to bring in one person. Fill in who they are, with their name, phone number, and any notes you want the assistants to know, and they get an owner the same way an imported lead does.
+
+## Acting on several people
+
+Tick people in the list and a bar appears above it: **Reach out**, **Send to Operator**, **Add to list** and **Add to tag**. Send to Operator opens Operator with their names already in the ask box, "For Dana, Alina and 2 others: ", so you finish the sentence with what to do. See [Operator](/operator).
+
+## Contact flows
+
+A **flow** is a place leads come from: Follow Up Boss, Zillow Premier Agent, your website form, an open house sign-in sheet, a CSV or Google Sheet. The **Contact flows** tab lists each one with how many people it brought in this week and when it last synced, then its **source** and the **tag** it gives everyone it brings in. An import's people are tagged `#import`. Who looks after each person is AgentNode's call, as above.
+
+Switch a flow off to pause it; its people stay. Under **Add a flow**, connect Facebook Lead Ads, Realtor.com, kvCORE, HubSpot, Gmail or Zapier.
 
 ## Tags
 
-A tag is a label you attach to a contact to describe where they came from or how you think about them — for example, `from zillow` or `inner circle`. A contact can carry as many tags as you need, one for each context they belong to. To focus on a specific group, pick a tag from the filter at the top of the contacts list and AgentNode will show you only the people who carry it.
+A tag is a label on a contact: `#zillow-leads`, `#past-clients`, `#open-house`. A contact can carry as many as you need, one for each context they belong to. Pick a tag at the top of the list to see only the people who carry it.
 
-## Reaching out
-
-Select one or more contacts from your list and click **Reach out**. A new campaign opens with those contacts already added — all you need to do is describe what the campaign should say and AgentNode handles the rest. This is the fastest way to spin up targeted outreach for a specific slice of your list without building a campaign from scratch.
+Open a tag's page and you will find **What assistants should know about #past-clients**: a box for who these people are and how to treat them, such as "referred by the Parks, mostly retirees, prefer calls over texts". Every assistant reads it before texting anyone with that tag. A job's working preferences can also name a tag, so "if #sky-realty, sign off as Sky Realty" applies only to those people. See [Your assistants](/assistants#working-preferences).
 
 ## Opted-out contacts
 
-When a lead replies **STOP**, AgentNode records the opt-out immediately and permanently. It will never text that person again, and no campaign — current or future — can pick them up. Opted-out contacts remain visible in your list but are clearly marked so you always know their status.
+When a lead replies **STOP**, AgentNode records the opt-out immediately and permanently. It never texts that person again, and no assistant can pick them up. Opted-out contacts remain visible in your list but are clearly marked.
 
 <Warning>
-  Opted-out contacts cannot be re-enrolled in any campaign. This cannot be undone from within AgentNode.
+  Opted-out contacts cannot be texted again from AgentNode. This cannot be undone from within the app.
 </Warning>

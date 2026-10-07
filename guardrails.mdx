@@ -1,55 +1,49 @@
 ---
 title: "Guardrails: When AgentNode Stops and Hands Off to You"
 sidebarTitle: "Guardrails"
-description: "AgentNode's guardrails ensure the AI only responds when it's confident, and escalates every other conversation to you in the Needs You queue."
+description: "AgentNode's guardrails ensure an assistant only answers when it's confident, and brings every other conversation to you in the Inbox."
 ---
 
-Guardrails are the built-in safety boundaries that tell AgentNode when to keep going and when to stop. Whenever a conversation moves into territory that needs a licensed professional, a clear human decision, or anything the AI isn't confident about, AgentNode stops replying and hands the thread to you — before it has a chance to say the wrong thing. You stay in control of every conversation that matters most.
+Guardrails are the boundaries that tell an assistant when to keep going and when to stop. Whenever a conversation moves into territory that needs a licensed professional, a clear human decision, or anything the assistant is not confident about, it stops replying and hands the thread to you before it can say the wrong thing. You stay in control of every conversation that matters most.
 
 ## What triggers a hand-off
 
-Any of these situations will cause AgentNode to stop and escalate the conversation to your Inbox:
-
 <CardGroup cols={2}>
-  <Card title="Unexpected reply" icon="circle-question">
-    The lead says something outside what the campaign was designed to handle — a topic, question, or direction the AI wasn't set up to respond to.
-  </Card>
-  <Card title="Booking request" icon="calendar-check">
-    A lead is ready to book and needs calendar confirmation. AgentNode flags it so you can lock in the appointment directly.
-  </Card>
   <Card title="Sensitive topic" icon="shield">
-    The lead raises a subject that requires a licensed professional's response — such as price, commission, contracts, legal questions, or property condition.
+    The lead raises a subject that needs a licensed professional's answer, such as price, offers and contracts, commission, legal questions, or property condition.
   </Card>
-  <Card title="Direct question" icon="message-question">
-    The lead asks something specific that AgentNode cannot answer with confidence, rather than risk giving an incorrect or misleading reply.
+  <Card title="Not sure enough" icon="circle-question">
+    The lead asks something the assistant cannot answer with confidence, from the thread, the lead's record and what you have told it. Rather than guess, it brings the question to you.
+  </Card>
+  <Card title="An upset lead" icon="face-frown">
+    The lead is angry, complaining, or confused by the last text. A person answers them next.
+  </Card>
+  <Card title="Suspects a machine" icon="robot">
+    The lead asks whether this is a bot, or tests it with something nobody would ask an agent. They hear from you next, never from the next automated line.
   </Card>
 </CardGroup>
 
 ## How escalation works
 
-When AgentNode decides a conversation needs you, here's exactly what happens:
-
 <Steps>
-  <Step title="AgentNode stops replying">
-    The thread is paused immediately. No further automated messages are sent while it's waiting for you.
+  <Step title="The assistant stops replying">
+    Automatic replies stop on that thread. Nothing more is sent to that person while it waits for you.
   </Step>
-  <Step title="The conversation appears in Needs You">
-    It shows up in the left column of your Inbox — the first thing you see when you open AgentNode.
+  <Step title="The thread lands in your Inbox">
+    It appears in the **Inbox** on your home screen, from the assistant that stopped, and under **Needs your attention** in that assistant's chat.
   </Step>
   <Step title="You see the full context">
-    The lead's history, what they asked, and why the conversation was escalated are all there, so you can jump in without needing to catch up.
+    The lead's history, what they asked, and why the assistant stopped are all there, so you can jump in without catching up.
   </Step>
   <Step title="You respond directly">
-    Reply from within AgentNode. Once you've handled it, you can switch the AI back on for that thread and AgentNode will resume from where it left off — or keep it in manual mode if you'd prefer to stay in the driving seat.
+    Reply from the thread. When you are done, hand the thread back and the assistant resumes from where it left off, or keep it yourself if you would rather stay in the driving seat.
   </Step>
 </Steps>
 
 ## Consent and escalation at import
 
-AgentNode only contacts leads you have imported. When you upload a CSV, you confirm that the contacts in that file are people you have a legitimate prior business relationship with or who have otherwise given consent to be contacted. That record is tied to your account from the moment of import.
-
-This means AgentNode never reaches out to someone you haven't explicitly brought into the platform — and every conversation it starts has a documented consent basis behind it.
+AgentNode only contacts leads you have brought in. When you import a CSV or connect a flow, you confirm that the contacts are people you have a legitimate prior business relationship with, or who have otherwise given consent to be contacted. That record is tied to your account from the moment they arrive, and a lead without it is a question to you, never a text.
 
 <Note>
-  AgentNode errs on the side of caution. If it isn't confident, it stops and asks you — it never guesses at sensitive real-estate questions or legal matters.
+  AgentNode errs on the side of caution. If an assistant is not confident, it stops and asks you. It never guesses at sensitive real estate questions or legal matters.
 </Note>
