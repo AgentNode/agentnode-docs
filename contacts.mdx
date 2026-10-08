@@ -1,10 +1,10 @@
 ---
 title: "Contacts: Import Leads, Connect Your Sources, and Tag People"
 sidebarTitle: "Contacts"
-description: "Import leads by CSV, add contacts one at a time, connect the places leads come from under Contact flows, and tag people so your assistants know how to treat them."
+description: "Import leads by CSV, add contacts one at a time, bring leads in on their own with Auto-import, and tag people so your assistants know how to treat them."
 ---
 
-Contacts is where everyone you have brought into AgentNode lives, with their tags, who looks after them, and their conversation right beside them. The top bar has two tabs: **Contacts**, with how many people there are, and **Contact flows**, the places new leads come from.
+Contacts is where everyone you have brought into AgentNode lives, with their tags, who looks after them, and their conversation right beside them. The top bar has two tabs: **Contacts**, with how many people there are, and **Auto-import**, with how many sources are bringing leads in on their own. **Import from CSV** sits at its right.
 
 Open any contact and their page shows their details, their **owner** (Lead Nurture, Client Relations, or you), the jobs they are in with each job's next step, and their conversation.
 
@@ -19,7 +19,7 @@ Every lead has exactly one owner. AgentNode picks it from where the lead came fr
     Pull a CSV export from your CRM, spreadsheet, or lead source. AgentNode accepts files of any size, so you do not need to split large lists.
   </Step>
   <Step title="Upload it from Contacts">
-    Press **Add from CSV** at the top of Contacts, or the **CSV import** door under **Add a flow** on the Contact flows tab.
+    Press **Import from CSV** in the top bar of Contacts, or the **CSV import** door under **Add a flow** on the Auto-import tab.
   </Step>
   <Step title="Map the columns">
     Tell AgentNode which column is the name, which is the phone number, and which columns hold notes it should know about. It remembers your mapping, so future imports from the same format are one click.
@@ -41,11 +41,38 @@ Click **Add contact** to bring in one person. Fill in who they are, with their n
 
 Tick people in the list and a bar appears above it: **Send to Operator**, **Add to list**, **Add to tag** and **Delete**. Send to Operator opens Operator with their names already in the ask box, "For Dana, Alina and 2 others: ", so you finish the sentence with what to do. See [Operator](/operator).
 
-## Contact flows
+## Auto-import
 
-A **flow** is a door leads come in by: Follow Up Boss, GoHighLevel, a Slack channel, a CSV import, or typed in by hand. The **Contact flows** tab lists each one with how many people it brought in this week and when it last synced, or when the last lead came in, then its **source** and the **tag** it gives everyone it brings in; a CSV gives one tag per file. Who looks after each person is AgentNode's call, as above.
+A **flow** is a door leads come in by: Follow Up Boss, GoHighLevel, a Slack channel, a CSV import, or typed in by hand. The **Auto-import** tab lists each one with how many people it brought in this week and when it last synced, or when the last lead came in, then its **source** and the **tag** it gives everyone it brings in; a CSV gives one tag per file. Who looks after each person is AgentNode's call, as above.
 
 Under **Add a flow** are the doors not open yet, each taking you to where it is connected: a CSV import, Follow Up Boss, GoHighLevel and Slack.
+
+### Switching an import on
+
+You connect Follow Up Boss, GoHighLevel or Slack once, under **Settings › Integrations**. Connecting imports nobody: its row on Auto-import ends in a switch, and its people come in once you turn it on.
+
+The first time you switch a CRM on, confirm that the people in it agreed to hear from you by text. People it marks do not contact are skipped. While an import is on, its row shows what the last read did, and **Import now** reads it again. Switching it off stops the reads and keeps everyone already imported.
+
+### New leads as they are added
+
+AgentNode reads everyone in a connected CRM once a day. New leads can also come in the moment they are added:
+
+- **Follow Up Boss**: automatic when the connected API key is the account owner's. Any other key works too, and its new people come with the daily read.
+- **GoHighLevel**: make a workflow that sends each new contact to AgentNode. The row shows the address to send it to.
+
+<Steps>
+  <Step title="Create the workflow">
+    In GoHighLevel, open **Automation › Workflows** and create a workflow triggered by **Contact Created**.
+  </Step>
+  <Step title="Add a webhook">
+    Add a **Webhook** action with method POST, to the address on the GoHighLevel row in Auto-import.
+  </Step>
+  <Step title="Name the contact">
+    Under its custom data, add `contact_id` with the value `{{contact.id}}`, then publish the workflow.
+  </Step>
+</Steps>
+
+The row says when new people are arriving as they are added, and what to fix when they are not.
 
 ## Tags
 
