@@ -1,66 +1,74 @@
 ---
-title: "Your Assistants: Lead Nurture, Client Relations, and Appointments"
+title: "Your Assistants: Lead Nurture, Client Relations, and Appointment Recovery"
 sidebarTitle: "Your assistants"
-description: "AgentNode's three assistants and the jobs they run, how to tell each one how you like things done, and what each has learned about your leads."
+description: "AgentNode's three assistants and the jobs they run, how each one is doing, and how to tell each job what to use and how you like things done."
 ---
 
-AgentNode comes with three assistants. Each runs a set of **jobs**, standing pieces of work it does for the people it looks after, and each has a page of its own under **Your assistants** in the left nav, with a chat where you talk to it.
+AgentNode comes with three assistants. Each runs a set of **jobs**, standing pieces of work it does for your leads, and each has a page of its own under **Your assistants** in the left nav.
 
-| Assistant | Looks after | Jobs |
+| Assistant | Works on | Jobs |
 |---|---|---|
 | **Lead Nurture** | New and active leads | New lead, Auto-reply, Follow-up, Re-engagement |
 | **Client Relations** | Past clients and your sphere | Birthdays and anniversaries, Review request, Referral ask |
-| **Appointments** | Everyone's meetings | Book a call, Missed appointment, Unconfirmed booking |
+| **Appointment Recovery** | Everyone's meetings | Book a call, Missed appointment, Unconfirmed booking |
 
-Every lead has one owner, Lead Nurture, Client Relations or you. Two things work every lead whoever owns them: Auto-reply answers what they text back, and Appointments looks after their meetings.
+No assistant owns a lead. Whatever happens with a managed lead, a new arrival, a reply, a meeting, a silence, goes to every assistant it concerns, and more than one may act on it. AgentNode checks their plans against each other before anything is sent, so the lead hears from one person and never gets two texts because two assistants had something to say. Switch **Managed** off on a lead's page and no assistant acts for them.
 
 ## An assistant's page
 
-Open an assistant from the left nav.
+Open an assistant from the left nav. Its page has a menu of its own: **Assistant** at the top, then its **Jobs**, each with a green dot while it is on.
 
-- **Assistant**, the first item, is one chat with it, **Talk to Lead Nurture**, with its status in the header: "Working 412 leads". The thread opens with what it did, yesterday and today, a line each with the time: "Booked Ava Lindqvist in for 14 Oak Lane, Thursday 9:30 AM." Then **Needs your attention**: the threads and questions waiting on you, each opening in the Inbox. Below that, your conversation: ask what it is doing, tell it how you like things done, or give it a one-off instruction. "Why did Marcus go quiet?", "Pause Zillow leads today", "Wait three days between follow-ups". Opening an assistant lands on the job you had open, otherwise here.
-- **Jobs**, in the left column, one row per job with a green dot when it is on.
-- **What it knows**: **People**, the leads it looks after (for Appointments, the people whose meetings it is working); **Memory**, what it has learned about each person: facts, preferences, intent and behaviour; **Outcomes**, what worked, what did not, timing and response patterns, and suggested improvements you can apply.
+**Assistant** shows how the last 30 days went:
+
+- **Lead Nurture**: **Reply rate**, compared with the 30 days before; **Leads booked**, of the new leads that arrived; and **Active conversations**, with how many are waiting on a follow-up.
+- **Client Relations**: **Reply rate**.
+- **Appointment Recovery**: **Rebooked**, of the meetings missed or cancelled, and **Time to rebook**, the median time from a miss to a new booking.
+
+To ask an assistant what it is doing, or tell it something, ask [Operator](/operator).
 
 ## Jobs
 
-A job page shows what the job does in a sentence, an **On** switch, and one card, **Working Preferences**: how you like this job done, and which integrations it uses.
+A job's page says what the job does, with a switch: **On**, or **Paused** when you switch it off. Below it are two cards: **Add-ons**, extra things the job can do, and **Working preferences**, how you like it done, in your words.
+
+### Add-ons
+
+Add-ons are built by AgentNode, each using one of your tools: **Book a viewing** with Google Calendar, **Look up a listing** with the MLS, **Log the touch** with Follow Up Boss. Each has a switch, and a faded row is off. Press one to open its settings:
+
+- **Integration**: which of your tools it uses. **Add integration** opens Settings › Integrations.
+- **When it runs**: **Automatically**, whenever the job needs it, or **Ask me first**, in the Inbox before it uses it.
+- **Instructions**: anything it should know, such as "Only for listings under 800k. Mention the school district."
+
+Nothing changes until you press **Save**, which saves them together.
 
 ### Working preferences
 
-Every row in the card is one preference. Some are things the job does through an integration: **Book the call in your calendar · Google Calendar**, **Log the touch · Follow Up Boss**, **Remind you 10 minutes before · Push to your mobile**. Each has a switch, and a dimmed row is off. The rest are how you like it done, one line each: "Mention the exact listing they asked about in the first text", "Offer two viewing times, never an open question about when", "Sign off as Josh, not Sky Realty". Describe one in the field at the foot of the card, pick a tool beside it if the preference needs one, and press Enter or **Add**; the **x** on a row removes it.
-
-Every row has a tool dropdown. A preference you typed reads **No tool** until you pick one of your connected integrations (Google Calendar, Outlook Calendar, Follow Up Boss, MLS, ShowingTime, Zoom, Gmail, Push to your mobile); **Add integration** at the foot of the menu opens Settings › Integrations. Texting is never a tool: every job texts on its own.
+Every row is one preference, in your words: "Mention the exact listing they asked about in the first text", "Offer two viewing times, never an open question about when", "Sign off as Josh, not Sky Realty". A line under each says who added it. Describe one in the box at the foot, pick a tool beside it if it needs one, and press **Add**. The **x** on a row removes it, and **Undo** puts it back.
 
 A preference can be aimed at some people only. Type `#` for a tag, `@` for a source, or `~` for a list, and pick from the names that appear as you type: "If `#sky-realty`, send from the Sky Realty number and sign off as Sky Realty", "If from `@zillow`, mention Zillow". A preference applies only to people who match every tag, source and list it names; everything else applies to everyone on the job.
+
+Texting is never a tool: every job texts on its own.
 
 ## Lead Nurture
 
 - **New lead**: when a new lead arrives, texts them within minutes in your hours, learns what they are looking for and follows up. A lead without consent on file is a question to you instead.
-- **Auto-reply**: answers every text a lead sends, whoever owns them, when it is sure enough of the answer, and books the time they agree to. Anything it is not sure of comes to you.
-- **Follow-up**: follows up with people who went quiet mid-conversation, at the spacing you set.
-- **Re-engagement**: wakes up leads who have been quiet for 30 days or more, strongest reason first, within your daily limit.
+- **Auto-reply**: answers every text a lead sends when it is sure enough of the answer, after the few minutes a person would take, and books the time they agree to. Anything it is not sure of comes to you.
+- **Follow-up**: restarts the conversation, with a new reason each time, when a lead goes quiet mid-conversation. Each morning AgentNode looks for leads who wrote, got an answer and have not written since, and Follow-up picks them up from the morning after.
+- **Re-engagement**: asks leads who have been quiet 30 days or more one low-pressure question: are they still looking?
 
 ## Client Relations
 
 - **Birthdays and anniversaries**: a text on the day, each year. It asks you for the dates it does not have, one by one or as a CSV.
 - **Review request**: asks for a review after a closing, with your review link.
-- **Referral ask**: asks past clients for an introduction, as often as you set.
+- **Referral ask**: asks past clients for an introduction, once a quarter.
 
 Client Relations' jobs wait while a lead is talking with Auto-reply or has a meeting booked, and pick up once the thread has been quiet for a few days.
 
-## Appointments
+## Appointment Recovery
 
 - **Book a call**: when a lead says yes to a call, or Lead Nurture hands them over, offers two times from your calendar and books the call. Three attempts; stops when the call is booked or they opt out.
 - **Missed appointment**: offers two new times within minutes of a no-show or a cancellation, until one is booked. A second miss in a row comes to you instead.
 - **Unconfirmed booking**: reminds anyone who has not confirmed, outside quiet hours.
 
-Appointments owns no leads. It works every meeting for whoever owns the lead, and never takes the lead from them.
-
 ## Switching off and pausing
 
-Switch a job off on its page and it plans nothing more; what it already sent stays on the thread. Tell an assistant to pause someone in its chat, or pause a contact on their page, and nothing is sent to them until you resume. An assistant never texts anyone who has opted out.
-
-<Note>
-  At launch AgentNode ships with these three assistants. **Hire an assistant**, under Your assistants, is where more come later; for now anything you describe there is added as a job to the closest assistant.
-</Note>
+Switch a job off on its page and it plans nothing more; what it already sent stays on the thread. Switch **Managed** off on a contact's page and no assistant texts them until you turn it back on. An assistant never texts anyone who has opted out.

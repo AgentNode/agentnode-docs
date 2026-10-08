@@ -1,22 +1,32 @@
 ---
 title: "Contacts: Import Leads, Connect Your Sources, and Tag People"
 sidebarTitle: "Contacts"
-description: "Import leads by CSV, add contacts one at a time, bring leads in on their own with Auto-import, and tag people so your assistants know how to treat them."
+description: "Import leads by CSV, add contacts one at a time, bring leads in on their own with Auto-import, choose who AgentNode manages, and tag people so your assistants know how to treat them."
 ---
 
-Contacts is where everyone you have brought into AgentNode lives, with their tags, who looks after them, and their conversation right beside them. The top bar has two tabs: **Contacts**, with how many people there are, and **Auto-import**, with how many sources are bringing leads in on their own. **Import from CSV** sits at its right.
+Contacts is where everyone you have brought into AgentNode lives, with their tags, whether AgentNode manages them, and their conversation right beside them. The top bar has two tabs: **Contacts**, with how many people there are, and **Auto-import**, with how many sources are bringing leads in on their own. **Import from CSV** sits at its right.
 
-Open any contact and their page shows their details, their **owner** (Lead Nurture, Client Relations, or you), the jobs they are in with each job's next step, and their conversation.
+## Managed
+
+Every contact is **Managed** or not, and the list says which. A managed contact is one AgentNode's assistants text and answer for you; for anyone else, AgentNode does nothing on its own. Everyone you add or import starts out managed. Switch it off at the head of **About** on their page, and back on whenever you like. Nobody who has opted out is texted, managed or not.
+
+## A contact's page
+
+Open any contact and their page has three columns:
+
+- **About**: the **Managed** switch, their details and, under **Relationship**, what AgentNode has learned about them.
+- **Conversation**: their latest texts, each captioned **Automatic** when an assistant sent it, **AI draft** when you sent one AgentNode wrote, or **You**. Press the AI logo on one of AgentNode's texts to say what to correct, or why it was wrong.
+- **Notes** and **Files**. Only you see notes: AgentNode never reads them, so they cannot end up in a text.
+
+Under the conversation, the **Next** card shows the next text an assistant has planned for them and when, or why none is coming. Its arrow opens **Upcoming messages**: what has happened with them so far, then every text coming. **Send now instead** opens the reply box on that next text: send it as it is or in your own words, and it goes now in place of the planned one, which then does not send.
+
+Below it are **AI drafts**: three replies written from the thread, **Warmer**, **Shorter** and **Ask for a call**. Press one to open the reply box with its words in it, or press **Write a text** to write your own.
 
 ## What AgentNode learns about them
 
 AgentNode learns about each contact in the background, as things happen. When a lead texts something about themselves that will still matter in a month, such as a move in March, a new budget or a birthday, it goes on their page under **Relationship**, with where it came from: "From Dana's reply, Thu, Oct 8, 9:31 AM". Tell Operator something about a lead, like "Dana's moving to Leeds in March", and it goes there too. Every assistant reads a contact's Relationship before it texts them.
 
 AgentNode learns this for every contact, whether or not their Managed switch is on. Sensitive facts, like health or money trouble, are marked private: the assistants use them to decide, and never put them in a text. Anything you typed yourself stays as you wrote it, and anything can come off with its **×**.
-
-## Who looks after whom
-
-Every lead has exactly one owner. AgentNode picks it from where the lead came from and what you have told it, and writes down why. Change it on the lead's page, at the head of **About**, and your choice holds. Leads who opt out are looked after by nobody.
 
 ## Importing a CSV
 
@@ -41,7 +51,7 @@ Every lead has exactly one owner. AgentNode picks it from where the lead came fr
 
 ## Adding a single contact
 
-Click **Add contact** to bring in one person. Fill in who they are, with their name, phone number, and any notes you want the assistants to know, and they get an owner the same way an imported lead does.
+Click **Add contact** to bring in one person: their name and number, that they agreed to hear from you by text, and anything else you know, like what they are looking for. They are saved managed by AgentNode. Nothing is sent from that page: the assistants text them only as their jobs say.
 
 ## Acting on several people
 
@@ -49,7 +59,7 @@ Tick people in the list and a bar appears above it: **Send to Operator**, **Add 
 
 ## Auto-import
 
-A **flow** is a door leads come in by: Follow Up Boss, GoHighLevel, a Slack channel, a CSV import, or typed in by hand. The **Auto-import** tab lists each one with how many people it brought in this week and when it last synced, or when the last lead came in, then its **source** and the **tag** it gives everyone it brings in; a CSV gives one tag per file. Who looks after each person is AgentNode's call, as above.
+A **flow** is a door leads come in by: Follow Up Boss, GoHighLevel, a Slack channel, a CSV import, or typed in by hand. The **Auto-import** tab lists each one with how many people it brought in this week and when it last synced, or when the last lead came in, then its **source** and the **tag** it gives everyone it brings in; a CSV gives one tag per file.
 
 Under **Add a flow** are the doors not open yet, each taking you to where it is connected: a CSV import, Follow Up Boss, GoHighLevel and Slack.
 
