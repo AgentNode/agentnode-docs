@@ -32,13 +32,15 @@ A job's page says what the job does, with a switch: **On**, or **Paused** when y
 
 ### Add-ons
 
-Add-ons are built by AgentNode, each using one of your tools: **Book a viewing** with Google Calendar, **Look up a listing** with the MLS, **Log the touch** with Follow Up Boss. Each has a switch, and a faded row is off. Press one to open its settings:
+Add-ons are built by AgentNode, each using one of your tools: **Book a viewing** with Google Calendar, **Look up a listing** with the MLS, **Log the touch** with Follow Up Boss. A row names the tool it uses when AgentNode carries it out today, as it does the add-ons that offer times and book, and says **coming soon** when it does not yet. Each has a switch, and a faded row is off. Press one to open its settings:
 
 - **Integration**: which of your tools it uses. **Add integration** opens Settings › Integrations.
 - **When it runs**: **Automatically**, whenever the job needs it, or **Ask me first**, in the Inbox before it uses it.
 - **Instructions**: anything it should know, such as "Only for listings under 800k. Mention the school district."
 
 Nothing changes until you press **Save**, which saves them together.
+
+When a lead says yes to a time, a job whose booking add-on is on (**Book a viewing**, **Offer and book times**, **Book the call in your calendar** or **Rebook the viewing**) books it on your calendar and texts them to confirm, as long as the time is still free and they have no meeting ahead. While automatic replies are off, in Settings or on that thread, or the add-on is set to **Ask me first**, the booking waits in your [Inbox](/inbox) with its confirming text. An assistant never moves or cancels a meeting.
 
 ### Working preferences
 
@@ -50,12 +52,16 @@ Texting is never a tool: every job texts on its own.
 
 ## Lead Nurture
 
-- **New lead**: when a new lead arrives, texts them within minutes in your hours, learns what they are looking for and follows up. A lead without consent on file is a question to you instead.
+- **New lead**: when a new inquiry arrives, texts them within minutes in your hours, learns what they are looking for and follows up. A new inquiry is someone who has just reached out: announced by Follow Up Boss or GoHighLevel as they are added, posted in your Slack leads channel, or added through Operator as one. People from a CSV or a CRM's daily read are not. A lead without consent on file is a question to you instead.
 - **Auto-reply**: answers every text a lead sends when it is sure enough of the answer, after the few minutes a person would take, and books the time they agree to. Anything it is not sure of comes to you.
 - **Follow-up**: restarts the conversation, with a new reason each time, when a lead goes quiet mid-conversation. Each morning AgentNode looks for leads who wrote, got an answer and have not written since, and Follow-up picks them up from the morning after.
-- **Re-engagement**: asks leads who have been quiet 30 days or more one low-pressure question: are they still looking?
+- **Re-engagement**: asks leads who have been quiet 30 days or more one low-pressure question: are they still looking? If they do not answer, it nudges once more.
+
+Lead Nurture stops reaching out to anyone a tag calls a client. Auto-reply still answers them.
 
 ## Client Relations
+
+Client Relations works for the people a tag calls a client, such as `#past-clients`, in AgentNode or in your CRM. Give a managed lead such a tag and Client Relations takes them up.
 
 - **Birthdays and anniversaries**: a text on the day, each year. It asks you for the dates it does not have, one by one or as a CSV.
 - **Review request**: asks for a review after a closing, with your review link.
@@ -67,7 +73,7 @@ Client Relations' jobs wait while a lead is talking with Auto-reply or has a mee
 
 - **Book a call**: when a lead says yes to a call, or Lead Nurture hands them over, offers two times from your calendar and books the call. Three attempts; stops when the call is booked or they opt out.
 - **Missed appointment**: offers two new times within minutes of a no-show, or of a lead calling a meeting off (by their text, by you telling Operator, or by your answer when Unconfirmed booking asks), until one is booked. A meeting you cancel yourself is not rebooked. A second miss in a row comes to you instead.
-- **Unconfirmed booking**: reminds anyone who has not confirmed, outside quiet hours. No reminder goes for a meeting the lead called off, even while it is still on your calendar. Half an hour after a meeting ends, if nothing says whether the lead came, it asks you in Needs you. Answer that they didn't, and Missed appointment offers them new times.
+- **Unconfirmed booking**: reminds anyone who has not confirmed, outside quiet hours. When your calendar gives a meeting a video link, it texts the lead that link the same way, and each reminder carries it; with the job off, or for a lead AgentNode does not manage, send the link yourself. No reminder goes for a meeting the lead called off, even while it is still on your calendar. Half an hour after a meeting ends, if nothing says whether the lead came, it asks you in Needs you. Answer that they didn't, and Missed appointment offers them new times.
 
 ## Switching off and pausing
 

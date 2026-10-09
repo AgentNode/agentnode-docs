@@ -16,7 +16,7 @@ To switch many at once, tell [Operator](/operator): "stop managing everyone from
 
 Open any contact and their page has three columns:
 
-- **About**: the **Managed** switch, their details and, under **Relationship**, what AgentNode has learned about them.
+- **About**: the **Managed** switch, their details, **Your note** and, under **Relationship**, what AgentNode has learned about them. The assistants read your note, and are told never to put it in a text.
 - **Conversation**: their latest texts, each captioned **Automatic** when an assistant sent it, **AI draft** when you sent one AgentNode wrote, or **You**. Press the AI logo on one of AgentNode's texts to say what to correct, or why it was wrong.
 - **Notes** and **Files**. Only you see notes: AgentNode never reads them, so they cannot end up in a text.
 
@@ -53,7 +53,7 @@ AgentNode learns this for every contact, whether or not their Managed switch is 
 
 ## Adding a single contact
 
-Tell [Operator](/operator) who they are: "Add Sam Lee, 555 010 0100, met at Saturday's open house, happy to get texts." Say that they agreed to hear from you by text, or they are saved with no consent on file and nothing is texted to them until there is. They are saved managed by AgentNode, and nothing is sent the moment they are added: the assistants text them only as their jobs say.
+Tell [Operator](/operator) who they are: "Add Sam Lee, 555 010 0100, met at Saturday's open house, happy to get texts." Say that they agreed to hear from you by text, or they are saved with no consent on file and nothing is texted to them until there is. Say too whether they are a new inquiry, someone who has just reached out to you: only then does Lead Nurture's **New lead** text them, and Operator asks when it cannot tell. They are saved managed by AgentNode, and nothing is sent the moment they are added: the assistants text them only as their jobs say.
 
 Or show Operator a screenshot: a contact card, a lead notification, a business card or an email signature. Paste it into the ask box, drop it there or pick it with the photo button; on the iPhone, send it with **+**. Operator adds each person it shows, exactly as written, then tells you what it saved and asks for anything it could not read clearly. A photo is never taken as agreement to texts, so say so if they agreed.
 
@@ -92,13 +92,15 @@ AgentNode reads everyone in a connected CRM once a day. New leads can also come 
   </Step>
 </Steps>
 
-The row says when new people are arriving as they are added, and what to fix when they are not.
+The row says when new people are arriving as they are added, and what to fix when they are not. People who arrive as they are added are new inquiries, so Lead Nurture's **New lead** texts them. People from the daily read are not.
 
 ## Tags
 
 A tag is a label on a contact: `#zillow-leads`, `#past-clients`, `#open-house`. A contact can carry as many as you need, one for each context they belong to. Pick a tag under **Tags** in the menu on the left to see only the people who carry it.
 
-Open a tag's page and you will find **What assistants should know about #past-clients**: a box for who these people are and how to treat them, such as "referred by the Parks, mostly retirees, prefer calls over texts". Every assistant reads it before texting anyone with that tag. A job's working preferences can also name a tag, so "if #sky-realty, sign off as Sky Realty" applies only to those people. See [Your assistants](/assistants#working-preferences).
+Open a tag's page and you will find **What assistants should know about #past-clients**: a box for who these people are and how to treat them, such as "referred by the Parks, mostly retirees, prefer calls over texts". Every assistant reads it before texting anyone with that tag, up to the five newest tags with notes for each person. A job's working preferences can also name a tag, so "if #sky-realty, sign off as Sky Realty" applies only to those people. See [Your assistants](/assistants#working-preferences).
+
+A tag named for clients, such as `#past-clients` or `client`, makes whoever carries it a client, and so does a client tag from your CRM: Client Relations takes them up, and Lead Nurture stops reaching out to them.
 
 ## Opted-out contacts
 
