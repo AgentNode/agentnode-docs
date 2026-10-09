@@ -1,10 +1,12 @@
 ---
 title: "Contacts: Import Leads, Connect Your Sources, and Tag People"
 sidebarTitle: "Contacts"
-description: "Import leads by CSV, add one person through Operator, bring leads in on their own with Auto-import, choose who AgentNode manages, and tag people so your assistants know how to treat them."
+description: "Import leads by CSV, add one person by hand or through Operator, bring leads in on their own with Auto-import, choose who AgentNode manages, and tag people so your assistants know how to treat them."
 ---
 
-Contacts is where everyone you have brought into AgentNode lives, with their tags, whether AgentNode manages them, and their conversation right beside them. The top bar has two tabs: **Contacts**, with how many people there are, and **Auto-import**, with how many sources are bringing leads in on their own. **Import from CSV** sits at its right.
+Contacts is where everyone you have brought into AgentNode lives, with their tags, whether AgentNode manages them, and their conversation right beside them. The top bar has two tabs: **Contacts**, with how many people there are, and **Auto-import**, with how many sources are bringing leads in on their own. **Add contacts** sits at its right, with **Add manually** and **Import from CSV**.
+
+Press **Name** or **Last contacted** at the head of the list to sort by it; press again to reverse it, and a third time for the usual order. **Filters** narrows the list to **Managed** or **Not managed** people, among others.
 
 ## Managed
 
@@ -37,10 +39,13 @@ AgentNode learns this for every contact, whether or not their Managed switch is 
     Pull a CSV export from your CRM, spreadsheet, or lead source. AgentNode accepts files of any size, so you do not need to split large lists.
   </Step>
   <Step title="Upload it from Contacts">
-    Press **Import from CSV** in the top bar of Contacts.
+    Press **Add contacts** in the top bar of Contacts, then **Import from CSV**.
   </Step>
   <Step title="Map the columns">
     Tell AgentNode which column is the name, which is the phone number, and which columns hold notes it should know about. It remembers your mapping, so future imports from the same format are one click.
+  </Step>
+  <Step title="Say what AgentNode should do with them">
+    **They are new leads** (off unless you switch it on) has Lead Nurture send each one a first text and follow up until they reply or book. Leave it off for a book of people you already know. **Managed by AgentNode** (on) lets the assistants look after them; switch it off to save them as contacts only.
   </Step>
   <Step title="Confirm consent">
     Confirm that these are people you have a prior relationship with. That record is stored on file, and nobody is texted without it.
@@ -53,7 +58,14 @@ AgentNode learns this for every contact, whether or not their Managed switch is 
 
 ## Adding a single contact
 
-Tell [Operator](/operator) who they are: "Add Sam Lee, 555 010 0100, met at Saturday's open house, happy to get texts." Say that they agreed to hear from you by text, or they are saved with no consent on file and nothing is texted to them until there is. Say too whether they are a new inquiry, someone who has just reached out to you: only then does Lead Nurture's **New lead** text them, and Operator asks when it cannot tell. They are saved managed by AgentNode, and nothing is sent the moment they are added: the assistants text them only as their jobs say.
+Press **Add contacts**, then **Add manually**. Give their name and number, and their source if you know it, and tick that they gave you permission to text them. Then say who they are:
+
+- **A new lead**: Lead Nurture sends the first text and follows up until they reply or book.
+- **An old lead or past contact**: Re-engagement checks in with one low-pressure question, with no first-contact intro.
+
+**Managed by AgentNode** is on unless you switch it off; off, they are saved as a contact only and nothing is sent until you turn it on. **Just save the contact** saves them that way straight away.
+
+Or tell [Operator](/operator) who they are: "Add Sam Lee, 555 010 0100, met at Saturday's open house, happy to get texts." Say that they agreed to hear from you by text, or they are saved with no consent on file and nothing is texted to them until there is. Say too whether they are a new inquiry, someone who has just reached out to you: only then does Lead Nurture's **New lead** text them, and Operator asks when it cannot tell. They are saved managed by AgentNode, and nothing is sent the moment they are added: the assistants text them only as their jobs say.
 
 Or show Operator a screenshot: a contact card, a lead notification, a business card or an email signature. Paste it into the ask box, drop it there or pick it with the photo button; on the iPhone, send it with **+**. Operator adds each person it shows, exactly as written, then tells you what it saved and asks for anything it could not read clearly. A photo is never taken as agreement to texts, so say so if they agreed.
 
@@ -92,7 +104,9 @@ AgentNode reads everyone in a connected CRM once a day. New leads can also come 
   </Step>
 </Steps>
 
-The row says when new people are arriving as they are added, and what to fix when they are not. People who arrive as they are added are new inquiries, so Lead Nurture's **New lead** texts them. People from the daily read are not.
+The row says when new people are arriving as they are added, and what to fix when they are not. People who arrive as they are added are new leads, so Lead Nurture's **New lead** texts them, unless 20 or more arrive at once, which is taken as a list you imported. People from the daily read are not.
+
+Each import that is on has **Treat new arrivals as new leads**, on to start with. Switch it off and the people it brings as they are added come in as contacts, and nobody is texted first. It changes only who arrives from then on.
 
 ## Tags
 
