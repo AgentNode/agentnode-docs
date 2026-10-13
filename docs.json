@@ -16,7 +16,7 @@
     "primary": {
       "type": "button",
       "label": "Get Early Access",
-      "href": "https://staging.goagentnode.com/signup"
+      "href": "https://goagentnode.com/signup"
     }
   },
   "navigation": {
@@ -38,7 +38,8 @@
               "operator",
               "inbox",
               "contacts",
-              "assistants"
+              "assistants",
+              "iphone-app"
             ]
           },
           {
@@ -55,6 +56,12 @@
               "settings",
               "messaging-compliance",
               "privacy-and-terms"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "support"
             ]
           }
         ]
