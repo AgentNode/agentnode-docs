@@ -45,6 +45,7 @@
           {
             "group": "AI & Messaging",
             "pages": [
+              "learning",
               "ai-messaging",
               "guardrails",
               "opt-outs"
