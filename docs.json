@@ -8,14 +8,14 @@
     "dark": "#0c142c"
   },
   "logo": {
-    "light": "https://media.brand.dev/28259124-4514-400a-bc37-8ab49082f205.svg",
-    "dark": "https://media.brand.dev/28259124-4514-400a-bc37-8ab49082f205.svg"
+    "light": "/logo.svg",
+    "dark": "/logo.svg"
   },
-  "favicon": "https://media.brand.dev/f75886b9-5669-4d41-9ea8-cba4e03ad70f.svg",
+  "favicon": "/favicon.svg",
   "navbar": {
     "primary": {
       "type": "button",
-      "label": "Get Early Access",
+      "label": "Get started",
       "href": "https://goagentnode.com/signup"
     }
   },
@@ -61,7 +61,8 @@
           {
             "group": "Help",
             "pages": [
-              "support"
+              "support",
+              "glossary"
             ]
           }
         ]
