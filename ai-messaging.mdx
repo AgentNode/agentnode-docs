@@ -10,20 +10,20 @@ Every text AgentNode sends is written for one person, from what you know about t
 
 - **The job and your working preferences**: what the job is for and how you like it done, including preferences aimed at a tag, a source or a list.
 - **Your realtor profile**: who you are, your market, and how you sound.
-- **The lead's record**: their name, notes, where they came from, and what the tag they carry says assistants should know.
-- **The conversation**: every text and reply on the thread so far, the texts still planned for them, and what the assistant has learned about them.
+- **The lead's record**: their name, notes, where they came from, and and anything their tags tell the assistants.
+- **The conversation**: every text and reply so far, the texts still planned for them, and what the assistant has learned about them.
 
 The more of this you provide, the more natural each text reads to the person receiving it.
 
 ## Auto-reply
 
-Every text a managed lead sends is answered. Auto-reply reads the thread, the lead's record and the assistant's memory, and answers in your hours when it is sure enough, after the few minutes a person would take: anywhere from 2 to 25 minutes, usually within 10. It books the time a lead agrees to, records what a reply settles, and leaves a draft for you when it is not sure. A lead who asks about price, contracts or legal matters, is upset, or suspects they are texting a machine, is handed to you: automatic replies stop on that thread until you hand it back. See [Guardrails](/guardrails).
+Every text a managed lead sends is answered. Auto-reply reads the conversation, the lead's record and the assistant's memory, and answers in your hours when it is sure enough, after the few minutes a person would take: anywhere from 2 to 25 minutes, usually within 10. It books the time a lead agrees to, records what a reply settles, and leaves a draft for you when it is not sure. A lead who asks about price, contracts or legal matters, is upset, or suspects they are texting a machine, is handed to you: automatic replies stop for that conversation until you press **Hand it back**. See [Guardrails](/guardrails).
 
 ## Written into the conversation
 
 Each text is written for the conversation it joins: everything said so far, and the texts still planned for that person by any assistant. So planned texts blend with what was said and with each other. If your last text said "Hi, I'm Josh with Acme", the next one does not introduce you again or repeat what another planned text says.
 
-Nothing rewrites a text on its way out. If the conversation changes before a planned text goes, because the lead writes, you text them yourself, or another text reaches them first, that text does not go as written: the assistant plans again with the conversation as it is. A text that was already waiting to send is taken back, and the thread says why.
+If something changes before a planned text goes, like the lead writes, you text them yourself, or another text reaches them first, that text is not sent as written. The assistant writes it again to fit the conversation as it is now. If it was already waiting to send, it is taken back, and the conversation says why.
 
 Texts you write go exactly as you typed them.
 
@@ -31,15 +31,15 @@ Texts you write go exactly as you typed them.
 
 Your assistants' texts send on their own, at their moment. **Settings › Messaging** has one rule on top of that: **Always approve the first text to a new contact**. With it on, the opener waits in your Inbox until you approve it, and follow-ups send as usual. To read every text before it goes, tell [Operator](/operator) to hold them, and each one waits in your Inbox as a draft.
 
-How sure a reply has to be to go on its own is **Confidence** under **Settings › Messaging › Replies**: Low, Medium, High (the default) or Every time. Even at Every time, a reply AgentNode cannot vouch for at all waits for you.
+**Confidence**, under **Settings › Messaging › Replies**, sets how sure AgentNode has to be before a reply goes without you: Low, Medium, High (the default) or Every time. The higher you set it, the more replies wait for your OK. Even at Every time, a reply AgentNode has no good answer for waits for you.
 
 A text AgentNode was not sure enough to send waits in the Inbox too, with the reason, and you can send it, edit it, or discard it. See [the Inbox](/inbox).
 
 ## When texts go
 
-- Nothing sends in **quiet hours**; a text due then waits for morning.
+- Nothing sends in **quiet hours** (9 PM to 8 AM). A text due then waits in your Inbox for your OK, unless you changed that in Settings.
 - One scheduled text a day per person, and an hour between texts while they say nothing. Answers to a reply are not held back.
-- A job's texts hold while the lead is talking with Auto-reply or has a meeting booked, and pick up once the thread has been quiet for a few days.
+- A job's texts hold while the lead is talking with Auto-reply or has a meeting booked, and pick up once the conversation has been quiet for a few days.
 - Nobody gets two texts because two jobs asked.
 
 ## Personalisation

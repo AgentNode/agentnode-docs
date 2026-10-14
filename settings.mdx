@@ -11,7 +11,7 @@ Settings is where you tell AgentNode who you are and how you work. The assistant
 Your name, work email address and sign-in method. AgentNode supports two ways to sign in:
 
 - **Email code**: enter your email address and AgentNode sends a one-time code. No password to remember.
-- **Password**: a traditional email-and-password combination if you prefer a persistent credential.
+- **Password**: an email and password, if you would rather use one.
 
 **Appearance** sets how AgentNode looks. **System**, the default, follows your device's light or dark mode and switches when it does. **Light** and **Dark** keep it one way. Each browser keeps its own choice, so two computers you sign in on can differ.
 
@@ -27,9 +27,9 @@ Your business details, used wherever a text or a signature needs them.
 
 AgentNode runs on credits, which pay for texts, calls and the AI behind them. Top up here and see what has been used. The work the assistants do for your managed contacts draws on them as it happens: see [What managing costs](/contacts#what-managing-costs).
 
-**Daily AI limit** is the most AgentNode's own work spends on AI in a day. Reaching it pauses that work until midnight, and raising it lets what is waiting go now. What you ask for yourself still works.
+**Daily AI limit** caps how many credits the assistants can spend on AI each day. When they reach it, they pause until midnight. Raise it to let them carry on now. Anything you ask Operator to do still works.
 
-When your credits run out, AgentNode's own work waits until they renew. A lead who texts meanwhile comes to your [Inbox](/inbox), where **Answer now** answers them anyway.
+When your credits run out, the assistants pause until they renew. A lead who texts meanwhile comes to your [Inbox](/inbox), where **Answer now** answers them anyway.
 
 ## Operator
 
@@ -39,7 +39,7 @@ How Operator acts on what you ask: whether it checks with you before anything it
 
 ### Sending
 
-- **Sending number**: the number every text goes from, and what it is doing: texting since when, or why it is not yet. It is bought and chosen under Numbers.
+- **Sending number**: the number every text goes from, and whether it is ready to text. If it isn't, it says why. To pick or buy a number, go to **Settings › Numbers**.
 - **Signature**: the name the first text to each person opens with and signs off with; after that, it never signs again.
 
 ### Rules
@@ -49,29 +49,31 @@ Every text follows these, whichever assistant wrote it:
 | Rule | What it does |
 |---|---|
 | **Always approve the first text to a new contact** | The opener waits in your Inbox until you approve it. Follow-ups send as usual. |
-| **Quiet hours** | Nothing sends in these hours. What becomes of a text due then is the row's choice: it waits with your drafts, goes at 8 AM, or is not sent. |
+| **Quiet hours** | Nothing AgentNode writes sends between 9 PM and 8 AM. You choose what happens to a text due then: it waits in your Inbox for you to check in the morning (the default), it sends at 8 AM, or it is not sent. |
 | **Opt-out line on first text** | The first text to each person carries "Reply STOP to opt out". |
-| **Send on weekends** | On, a text due on a Saturday or Sunday goes then. Off, it waits for Monday morning; an answer to a lead still goes. |
+| **Send on weekends** | On, a text due on a Saturday or Sunday goes then. Off, it waits for Monday morning. Replies to leads who text you still go. |
 
 ## Integrations
 
-Google Calendar, Outlook Calendar, Apple Calendar, Follow Up Boss, MLS (ACTRIS), ShowingTime, Zoom, Gmail and Push to your mobile. A job's add-ons and working preferences pick their tool from the ones connected here, and **Add integration** lands on this page. See [Your assistants](/assistants#add-ons).
+The apps AgentNode can connect to: your calendar (Google, Outlook or Apple), Follow Up Boss, and, coming soon, GoHighLevel, MLS (ACTRIS), ShowingTime, Zoom and Gmail. Your assistants can use any app connected here, and **Add integration** on a job lands on this page. See [Your assistants](/assistants#add-ons).
+
+To connect Follow Up Boss, open it and press **Sign in**. **Other ways to connect** has a way to paste a key instead, for when signing in doesn't work for you. See [Contacts](/contacts#switching-an-import-on).
 
 ### Your calendar
 
-Connect one calendar, and AgentNode adds the meetings it books to it and only offers times you are free. Only when you are busy is read, never what your events are.
+Connect one calendar, and AgentNode adds the meetings it books to it and only offers times you are free. AgentNode only sees when you are busy, never what your events are.
 
 | Calendar | How you connect it |
 |---|---|
 | **Google Calendar** | Sign in to Google. |
 | **Outlook Calendar** | Sign in to Microsoft: a work or school account for Microsoft 365, or a personal one for Outlook.com. Video calls get a Teams link where your Microsoft 365 plan has Teams. |
-| **Apple Calendar** | Your Apple ID and an app-specific password. Make the password at [account.apple.com](https://account.apple.com/account/manage) under **Sign-In and Security → App-Specific Passwords**, name it AgentNode, and paste it in. Your Apple ID password does not work here. |
+| **Apple Calendar** | Your Apple ID and an app-specific password, a separate password Apple makes for one app. Make the password at [account.apple.com](https://account.apple.com/account/manage) under **Sign-In and Security → App-Specific Passwords**, name it AgentNode, and paste it in. Your Apple ID password does not work here. |
 
-AgentNode keeps one calendar at a time. To switch, disconnect the one you have, then connect the other. Choose which of your calendars meetings go into under **Settings → Calendar**.
+AgentNode keeps one calendar at a time. To switch, disconnect the one you have, then connect the other. Choose which of your calendars meetings go into under **Settings › Calendar**.
 
-## Changing settings mid-flight
+## When changes take effect
 
-Changes take effect on the **next text** AgentNode sends. Conversations already in progress are not retroactively altered, so you can refine your profile and rules without disrupting active threads.
+Changes take effect on the **next text** AgentNode sends. Texts already sent stay as they are, so you can refine your profile and rules at any time.
 
 <Note>
   How each job does its work lives on the job itself, as its working preferences, not here. See [Your assistants](/assistants#working-preferences).
