@@ -44,15 +44,17 @@ AgentNode learns this for every contact, whether or not their Managed switch is 
 
 ## Importing a CSV
 
+A CSV is a plain spreadsheet file. Every CRM can export one, and so can Google Sheets (**File › Download › Comma Separated Values**) and Excel (**Save As**, then choose CSV). It needs a column of names and a column of mobile numbers; anything else is optional.
+
 <Steps>
   <Step title="Export your contacts">
-    Download your contacts as a CSV file from your CRM, spreadsheet or lead source. CSV is a simple spreadsheet file that most CRMs and Excel can save. AgentNode accepts files of any size, so you do not need to split large lists.
+    Save a CSV from your CRM, spreadsheet or lead source. AgentNode accepts files of any size, so you do not need to split large lists.
   </Step>
   <Step title="Upload it from Contacts">
-    Press **Add contacts** in the top bar of Contacts, then **Import from CSV**.
+    Press **Add contacts** in the top bar of Contacts, then **Import from CSV**, and choose the file. The import runs in three steps, shown across the top: **Upload**, **Map columns** and **Results**.
   </Step>
-  <Step title="Match the columns">
-    Tell AgentNode which column is the name, which is the phone number, and which columns hold notes it should know about. Next time you upload a file laid out the same way, it remembers your choices.
+  <Step title="Check the columns">
+    AgentNode works out which column is the name, which is the phone number, and which hold notes it should know about. Check it got them right. It remembers your choices, so the next import of the same layout is one click.
   </Step>
   <Step title="Say what AgentNode should do with them">
     Turn on **They are new leads** (off to start with) if these people just got in touch with you. Lead Nurture's first text then answers them, and it follows up until they reply or book. **Managed by AgentNode** (on) has the assistants start on everyone straight away, new leads or not, so most get a first text; switch it off to save them as contacts only, which costs nothing while they are quiet. See [What managing costs](#what-managing-costs).
@@ -63,7 +65,7 @@ AgentNode learns this for every contact, whether or not their Managed switch is 
 </Steps>
 
 <Note>
-  AgentNode skips duplicates. If a phone number is already in your contacts, that person is not added twice.
+  AgentNode removes duplicates. If a phone number is already in your contacts, it does not create a second record, so you can upload an updated copy of the same list.
 </Note>
 
 ## Adding a single contact
@@ -85,7 +87,7 @@ Tick people in the list and a bar appears above it: **Send to Operator**, **Add 
 
 ## Auto-import
 
-Auto-import brings people in from your CRM by itself, so you don't have to keep uploading files. Once a day AgentNode checks your CRM for everyone you chose, and where your CRM allows it, new people come in the moment they are added there.
+Auto-import brings people in from your CRM by itself, so you don't have to keep uploading files. New people come in as they are added to your CRM, and once a day AgentNode checks your CRM for anyone it missed.
 
 The **Auto-import** tab lists the sources you have connected: Follow Up Boss, GoHighLevel and a Slack channel. Each row shows how many people it brought in this week and when it last checked, then its **source** and the **tag** it gives everyone it brings in. CSV imports and people added through Operator are not listed here.
 
@@ -93,14 +95,15 @@ Under **Add an import** are the ones you have not connected yet, each taking you
 
 ### Switching an import on
 
-You connect Follow Up Boss, GoHighLevel or Slack once, under **Settings › Integrations**. For a CRM, press **Sign in**, sign in to your CRM and press **Allow**. GoHighLevel asks which of your accounts to connect (it calls them sub-accounts): pick the one your leads are in.
+1. Connect your CRM once, under **Settings › Integrations**: press **Sign in**, then **Allow**. GoHighLevel also asks which sub-account to connect.
+2. Connecting brings nobody in yet. On the **Auto-import** tab, turn on the CRM's switch.
+3. Choose who comes in. **New people**, anyone your CRM adds from now on with a mobile number, always come in. The people already in your CRM come in only if you tick **Also bring in people already in Follow Up Boss**, and then you choose **Everyone already there** or **Only some**, by stage (Follow Up Boss) or tag. Most of a CRM is people nobody wants texted, so the box starts off.
+4. The first time, confirm that the people you bring in agreed to hear from you by text. Anyone your CRM marks as do not contact is skipped.
 
-Connecting brings nobody in yet. To start, turn on the CRM's switch on the **Auto-import** tab, and choose who comes in. The first time, confirm that the people in it agreed to hear from you by text. Anyone your CRM marks as do not contact is skipped.
-
-While an import is on, its row shows what the last check found, and **Import now** checks again. Switching it off stops the checks and keeps everyone already brought in.
+While an import is on, its row shows what the last check found, and **Import now** checks again. Switching it off stops the import and keeps everyone already brought in.
 
 <Accordion title="Can't sign in? Connect with a key instead">
-  Under **Settings › Integrations**, open your CRM and press **Other ways to connect**.
+  Under **Other ways to connect** in Settings › Integrations, you can paste a key instead of signing in.
 
   - **Follow Up Boss**: in Follow Up Boss, open **Admin › API**, press **Create API Key**, and paste it into AgentNode. If the account owner makes the key, new people come in the moment they are added.
   - **GoHighLevel**: in GoHighLevel, open **Settings › Private Integrations** and create one with **View Contacts** ticked (add **Edit Contacts** and **View Workflows** for AgentNode to add notes, tags and tasks when you ask). Paste it into AgentNode with your **Location ID**, from **Settings › Business Profile**.
@@ -108,8 +111,9 @@ While an import is on, its row shows what the last check found, and **Import now
 
 ### New people the moment they are added
 
-- **Follow Up Boss**: new people come in the moment they are added when the account owner connected it. If someone else connected it, they come in with the once-a-day check.
-- **GoHighLevel**: this needs a one-time setup inside GoHighLevel. Ask whoever manages your GoHighLevel, or follow the steps below.
+Follow Up Boss tells AgentNode about new people as soon as they are added, once its account owner has connected it. The row says when new people are coming in straight away, and what to fix when they are not. Without it, new people still come in with the once-a-day check.
+
+GoHighLevel needs one extra step for this. If you would rather not do it yourself, email [support@goagentnode.com](mailto:support@goagentnode.com) and we will walk you through it.
 
 <Accordion title="Optional: set up GoHighLevel to send new people straight away">
   <Steps>
@@ -124,8 +128,6 @@ While an import is on, its row shows what the last check found, and **Import now
     </Step>
   </Steps>
 </Accordion>
-
-The row says when new people are coming in straight away, and what to fix when they are not.
 
 ### Treat new arrivals as new leads
 
@@ -146,7 +148,7 @@ A tag named for clients, such as `#past-clients` or `client`, makes whoever carr
 
 ## Opted-out contacts
 
-When a lead replies **STOP**, AgentNode records the opt-out immediately and permanently. It never texts that person again, and no assistant can pick them up. Opted-out contacts remain visible in your list but are clearly marked.
+When a lead replies **STOP** (or END, CANCEL, UNSUBSCRIBE, QUIT or STOPALL), AgentNode records the opt-out immediately and permanently. It never texts that person again, and no assistant can pick them up. Opted-out contacts remain visible in your list but are clearly marked.
 
 <Warning>
   Opted-out contacts cannot be texted again from AgentNode. This cannot be undone from within the app.

@@ -10,7 +10,7 @@ When a lead texts STOP, AgentNode stops texting them, straight away and for good
 
 <Steps>
   <Step title="Lead sends an opt-out keyword">
-    The lead replies with **STOP**, UNSUBSCRIBE, CANCEL, END, or QUIT.
+    The lead replies with **STOP**, or with STOPALL, UNSUBSCRIBE, CANCEL, END or QUIT.
   </Step>
   <Step title="AgentNode records it straight away">
     It is recorded the moment the reply arrives. You don't need to do anything.
@@ -29,7 +29,7 @@ Opted-out contacts remain visible in your **Contacts** list. They are clearly ma
 
 ## Why this matters
 
-US law (the Telephone Consumer Protection Act, or TCPA) says you must stop texting anyone who asks you to. Texting them again without their new permission can mean large fines. AgentNode handles STOP replies for you, so you don't need to track them.
+SMS opt-out compliance is a legal requirement under the Telephone Consumer Protection Act (TCPA). Failing to honor a STOP request — or attempting to contact that person again without documented renewed consent — can result in significant fines and legal exposure. AgentNode handles opt-outs automatically so you're protected without needing to track them manually, but understanding how the system works helps you stay compliant at every stage.
 
 <Warning>
   Never try to reach someone who opted out from another number or another way. That breaks US law and AgentNode's Terms of Service.
@@ -42,5 +42,5 @@ When you import a CSV file, you confirm that everyone in it is someone you alrea
 If someone has already told you they don't want to hear from you, in any way, don't import them. AgentNode only knows about opt-outs that happen in AgentNode.
 
 <Tip>
-  Before you upload a file, take out anyone you know has opted out. AgentNode removes duplicate rows, but it can't know who opted out elsewhere.
+  Review your import list before uploading. AgentNode removes duplicate rows, but it's good practice to remove known opt-outs from your CSV before importing.
 </Tip>
