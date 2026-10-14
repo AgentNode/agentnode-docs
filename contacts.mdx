@@ -95,11 +95,13 @@ Under **Add an import** are the ones you have not connected yet, each taking you
 
 You connect Follow Up Boss, GoHighLevel or Slack once, under **Settings › Integrations**. For a CRM, press **Sign in** and allow AgentNode; GoHighLevel's sign-in asks which sub-account to connect. That is the easy way. If you would rather paste a key, Follow Up Boss keeps its under **Admin › API**, and GoHighLevel under **Settings › Private Integrations**, where AgentNode also asks for the Location ID of the sub-account to read. Connecting imports nobody: its row on Auto-import ends in a switch, and its people come in once you turn it on.
 
+An import brings in **new people**: everyone your CRM adds from the moment you switch it on, with a mobile number. The people already in the CRM come in only if you tick **Also bring in people already in Follow Up Boss**, and then you choose **Everyone already there** or **Only some**, by stage (Follow Up Boss) or tag. Most of a CRM is people nobody wants texted, so the box starts off.
+
 The first time you switch a CRM on, confirm that the people in it agreed to hear from you by text. People it marks do not contact are skipped. While an import is on, its row shows what the last read did, and **Import now** reads it again. Switching it off stops the reads and keeps everyone already imported.
 
 ### New leads as they are added
 
-AgentNode reads everyone in a connected CRM once a day. New leads can also come in the moment they are added:
+AgentNode reads a connected CRM once a day, to catch anyone it was not told about and keep the leads it has up to date. New leads can also come in the moment they are added:
 
 - **Follow Up Boss**: automatic when the account owner connected it, by signing in or with their API key. Connected by anyone else, its new people come with the daily read.
 - **GoHighLevel**: make a workflow that sends each new contact to AgentNode. The row shows the address to send it to.
