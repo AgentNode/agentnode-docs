@@ -6,11 +6,13 @@ description: "Import leads by CSV, add one person by hand or through Operator, b
 
 Contacts is where everyone you have brought into AgentNode lives, with their tags, whether AgentNode manages them, and their conversation right beside them. The top bar has two tabs. **Contacts** lists everyone. **Auto-import** shows the apps, like your CRM, that bring new people in by themselves. **Add contacts** sits at the right, with **Add manually** and **Import from CSV**.
 
-Press **Name** or **Last contacted** at the head of the list to sort by it; press again to reverse it, and a third time for the usual order. **Filters** narrows the list to **Managed** or **Not managed** people, among others.
+Press **Name** or **Last contacted** at the head of the list to sort by it; press again to reverse it, and a third time for the usual order. **Filters** narrows the list to **Managed** or **Not managed** people, among others. The badges above the list do the common ones in one press, such as **Recently added** for everyone added this week.
+
+**Last contacted** is when AgentNode last texted someone. It stays empty until AgentNode does, even if your CRM or your CSV file says you were in touch before.
 
 ## Managed
 
-Every contact is **Managed** or not, and the list says which. A managed contact is one AgentNode's assistants text and answer for you; for anyone else, AgentNode does nothing on its own. Everyone you add or import starts out managed. Switch it off with the **Managed** switch at the top of **About** on their page, and back on whenever you like. Nobody who has opted out is texted, managed or not.
+Every contact is **Managed** or not, and the list says which. A managed contact is one AgentNode's assistants text and answer for you; for anyone else, AgentNode does nothing on its own. People you add by hand, from a CSV file or from your CRM start out not managed: say so as you bring them in, or later with the **Managed** switch at the top of **About** on their page. Switch it off again whenever you like. Nobody who has opted out is texted, managed or not.
 
 In the iPhone app, the **Managed** switch is on each contact's page, and the filter button at the top of **Contacts** shows **Everyone**, **Managed** or **Not managed**.
 
@@ -28,17 +30,24 @@ So keep Managed on for the people you want AgentNode to work, and off for everyo
 
 Open any contact and their page has three columns:
 
-- **About**: the **Managed** switch, their details, including their birthday and home anniversaries, **Your note**, and any **Details** you added. The assistants read your note, but never put it in a text.
+- **About**: the **Managed** switch, their details, including their birthday and home anniversaries, the **Consent** switch, **Your note**, and any **Details** you added, then the **Summary** AgentNode writes about them (below). The assistants read your note, but never put it in a text.
 - **Conversation**: the whole conversation with them, newest at the bottom; older texts load as you scroll up. Each text says who wrote it: **Automatic** when an assistant sent it on its own, **AI draft** when you sent words AgentNode wrote. A text that did not go says **Not delivered** and why, with **Retry** under it. Calls show where they happened. Press the AI logo on one of AgentNode's texts to say what to correct, or why it was wrong. The **⋯** at the top of the column clears the chat or deletes the conversation.
-- **Notes** and **Files**. Only you see notes: AgentNode never reads them, so they cannot end up in a text.
+- **Notes** and **Files**: the newest five of each. **View all** opens the rest in a panel on the right. Only you see notes: AgentNode never reads them, so they cannot end up in a text.
+- **Tell AgentNode**, under **Files**: a box for anything about them. Write what you know ("she's pre-approved up to 600k"), what happened ("he didn't show today") or what to do ("text her: the open house moved to 3"), and press Enter. Attach files with the paperclip, or drop them on the box: a photo is read along with what you wrote, and any other file is also kept in their **Files**. It is the same as telling [Operator](/operator), with this contact already named: what you know is kept for every assistant, news goes to the assistants it concerns, and asks are done. Its answer shows in the box, and the exchange is on Operator's chat, marked with who it was about. On a phone it is on the **Notes & files** tab.
 
 Under the conversation, the **Next** card shows the next text an assistant has planned for them and when, or why none is coming. **See the plan**, across the foot of the card, opens **Upcoming messages**: every text coming, soonest first, with when it goes and why. **Send now instead** opens the reply box on that next text. Send it as it is or in your own words, and it goes right away instead of the planned one.
 
 Below it, press **Write a text**, or **Text** at the top of the page, to open the reply box. Nobody has texted them yet? The column holds the first text instead: write it, or pick a suggested opener, and press **Start conversation**.
 
+### Consent
+
+**Consent** in About says whether they agreed to be texted. Switch it on when they have, and AgentNode can text them; switch it off and nothing is texted to them, and any texts the assistants had planned are called off. Someone who opted out stays off, and the switch cannot turn them back on.
+
 ## What AgentNode learns about them
 
-AgentNode learns about each contact in the background, as things happen. When a lead texts something about themselves that will still matter in a month, such as a move in March, a new budget or a birthday, AgentNode keeps it. Tell Operator something about a lead, like "Dana's moving to Leeds in March", and it is kept too, as is what an assistant learns while it works for them. Every assistant reads it each time it works for them, so what one learns, they all remember. It stays in the background: their page does not show it.
+AgentNode learns about each contact in the background, as things happen. When a lead texts something about themselves that will still matter in a month, such as a move in March, a new budget or a birthday, AgentNode keeps it. Tell Operator something about a lead, like "Dana's moving to Leeds in March", or write it in **Tell AgentNode** on their page, and it is kept too, as is what an assistant learns while it works for them. Every assistant reads it each time it works for them, so what one learns, they all remember. It stays in the background: their page does not list it.
+
+What you see is the **Summary** under **About**: a few sentences on who they are and where things stand, written by AgentNode from what it has learned and the details you added. AgentNode rewrites it a couple of minutes after any of that changes. A contact it knows nothing about yet has no summary. Writing one uses a little AI, billed in credits like the rest.
 
 You can add details of your own, anything you want on file. On their page, press the pencil beside **About**, then **Add a detail**. Give it a name and a value, such as "Lender" and "Chase", and press **Save**. It shows under **Details** in **About**, and every assistant reads it. Change a value, or take one off with its **×**, the same way. Or ask Operator: "put Lender: Chase on Sam".
 
@@ -59,7 +68,7 @@ A CSV is a plain spreadsheet file. Every CRM can export one, and so can Google S
     AgentNode works out which column is the name, which is the phone number, and which hold notes it should know about. Check it got them right. It remembers your choices, so the next import of the same layout is one click.
   </Step>
   <Step title="Say what AgentNode should do with them">
-    Turn on **They are new leads** (off to start with) if these people just got in touch with you. Lead Nurture's first text then answers them, and it follows up until they reply or book. **Managed by AgentNode** (on) has the assistants start on everyone straight away, new leads or not, so most get a first text; switch it off to save them as contacts only, which costs nothing while they are quiet. See [What managing costs](#what-managing-costs).
+    Turn on **They are new leads** (off to start with) if these people just got in touch with you. Lead Nurture's first text then answers them, and it follows up until they reply or book. Switch on **Managed by AgentNode** (off to start with) to have the assistants start on everyone straight away, new leads or not, so most get a first text. Left off, they are saved as contacts only, which costs nothing while they are quiet. See [What managing costs](#what-managing-costs).
   </Step>
   <Step title="Confirm consent">
     Confirm that these are people you have a prior relationship with. AgentNode saves your confirmation, and texts nobody without it.
@@ -77,7 +86,7 @@ Press **Add contacts**, then **Add manually**. Give their name and number, and t
 - **A new lead**: Lead Nurture sends the first text and follows up until they reply or book.
 - **An old lead or past contact**: Re-engagement checks in with one low-pressure question, with no first-contact intro.
 
-**Managed by AgentNode** is on unless you switch it off; off, they are saved as a contact only and nothing is sent until you turn it on. **Just save the contact** saves them that way straight away.
+**Managed by AgentNode** is off until you switch it on; off, they are saved as a contact only and nothing is sent until you turn it on. **Just save the contact** saves them that way straight away.
 
 Or tell [Operator](/operator) who they are: "Add Sam Lee, 555 010 0100, met at Saturday's open house, happy to get texts." Say that they agreed to hear from you by text. If you don't, they are saved, but not texted until they agree. Say too whether they are a new inquiry, someone who has just reached out to you: only then does Lead Nurture's **New lead** text them, and Operator asks when it cannot tell. They are saved as managed. Nothing is sent the moment they are added: the assistants reach out on their usual schedule.
 
@@ -105,7 +114,7 @@ The questions are:
 
 - **Who should come in from Follow Up Boss?** **New people only** brings anyone your CRM adds from now on. **New people, plus some already in Follow Up Boss** also brings the people you pick, by stage (Follow Up Boss) or tag. **New people, plus everyone already in Follow Up Boss** brings everyone with a mobile number. Most of a CRM is people nobody wants texted, so it starts on new people only.
 - **Which tags should they get?** Everyone from your CRM always gets its own tag, such as **Follow Up Boss leads**. Press **Add a tag** to give them more: pick one of your tags, or type a name to make a new one.
-- **Should AgentNode manage them?** **Yes** and your assistants look after them. **No** and they are saved as contacts only, and nobody is texted.
+- **Should AgentNode manage them?** It starts on **No**: they are saved as contacts only, and nobody is texted. Choose **Yes** and your assistants look after everyone the import brings in.
 - **Text new people as new leads?** Asked when the answer above is Yes. See [Text new people as new leads](#text-new-people-as-new-leads).
 - **Do you have their permission to text them?** Asked the first time only. Tick the box to confirm that the people you bring in agreed to hear from you by text. Anyone your CRM marks as do not contact is skipped.
 
@@ -158,7 +167,7 @@ It only changes who arrives from then on.
 
 A tag is a label on a contact: `#zillow-leads`, `#past-clients`, `#open-house`. A contact can carry as many as you need, one for each context they belong to. Pick a tag under **Tags** in the menu on the left to see only the people who carry it.
 
-Open a tag's page and you will find **What assistants should know about #past-clients**: a box for who these people are and how to treat them, such as "referred by the Parks, mostly retirees, prefer calls over texts". Every assistant reads it before texting anyone with that tag, up to the five newest tags with notes for each person. A job's working preferences can also name a tag, so "if #sky-realty, sign off as Sky Realty" applies only to those people. See [Your assistants](/assistants#working-preferences).
+A job's working preferences can name a tag, so "if #sky-realty, sign off as Sky Realty" applies only to those people. See [Your assistants](/assistants#working-preferences).
 
 A tag named for clients, such as `#past-clients` or `client`, makes whoever carries it a client, and so does a client tag from your CRM: Client Relations takes them up, and Lead Nurture stops reaching out to them.
 
