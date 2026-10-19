@@ -39,7 +39,8 @@
               "inbox",
               "contacts",
               "assistants",
-              "iphone-app"
+              "iphone-app",
+              "texting-agentnode"
             ]
           },
           {
