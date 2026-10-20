@@ -79,6 +79,15 @@
       "family": "DM Sans"
     }
   },
+  "seo": {
+    "organization": {
+      "id": "https://goagentnode.com/#organization",
+      "name": "AgentNode",
+      "legalName": "Whiteworth Inc.",
+      "url": "https://goagentnode.com",
+      "logo": "https://goagentnode.com/brand/apple-touch-icon.png"
+    }
+  },
   "redirects": [
     {
       "source": "/campaigns",
