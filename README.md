@@ -19,3 +19,9 @@ Open `http://localhost:3000`. `mint validate` checks the build and
 
 Pushing to `main` deploys to production through Mintlify's GitHub app. Open a
 pull request for every change.
+
+## Brand
+
+Headings are set in Cal Sans, the brand face, from `fonts/` rather than
+Google Fonts so a heading at any weight is drawn as designed, not thickened.
+The file is a copy of the app's `apps/web/src/app/_fonts/CalSans-Regular.woff2`.
