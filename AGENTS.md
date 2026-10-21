@@ -17,6 +17,15 @@ a setting, check the label there (`apps/web/src`) and quote it exactly. Do not
 document what is planned; document what ships. Nothing about staging or
 internal tooling belongs here.
 
+## Explain the product, not the screen
+
+A page defines what a thing is and what it does for the reader, not what the
+screen looks like while it does it. Say what Managed means and what changes
+when it is on, not that the ring around a face turns, what the switch reads
+while an assistant works, or where Undo appears. Name a control only where the
+reader has to press it. A sentence that only tells them what they would see
+anyway is cut.
+
 ## Terminology
 
 - **Assistant** (never "agent", which readers take to mean themselves) for
