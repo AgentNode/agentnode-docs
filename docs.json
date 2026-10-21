@@ -73,7 +73,10 @@
   },
   "fonts": {
     "heading": {
-      "family": "Space Grotesk"
+      "family": "Cal Sans",
+      "source": "/fonts/CalSans-Regular.woff2",
+      "format": "woff2",
+      "weight": 700
     },
     "body": {
       "family": "DM Sans"
