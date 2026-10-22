@@ -20,6 +20,16 @@ Switching someone off cancels the texts the assistants had planned for them. Swi
 
 To switch many at once, tell [Operator](/operator): "stop managing everyone from Zillow", "manage my past clients again". For a whole group, Operator first tells you how many people it will switch, and switches them only when you say yes.
 
+### Approving first plans
+
+AgentNode never texts a lead before it has a plan for them: which texts the assistants mean to send, and when. To read that plan before anything reaches them, turn on **Manually approve the first plan for each lead** under **Settings › Messaging**. It starts off.
+
+With it on, each lead's first plan waits for you, and nothing reaches them until you approve it. Every plan after that goes ahead on its own, so you are asked once per lead, never again as their plan changes. Leads AgentNode has already texted are past their first plan, so they are not asked about.
+
+Plans waiting for you are in your Inbox, on the lead's page, and on their row in **Contacts**, where the **Plan needs approval** filter finds them all. Approve one at a time, or all at once: a big list then starts half a minute apart, so it is not texted in one go. **Undo** takes an approval back while it shows. Want something changed first? **Update plan** tells the assistants, in your words, what to change, and the new plan waits for you too.
+
+You can also ask for it for just the people one import brings in, with the setting off: a CSV import and each CRM import have their own **Manually approve the first plan for each lead**, off to start with. Switching the setting off later sends nothing that is waiting: those plans still wait for you.
+
 ### What managing costs
 
 Your credits go on the work AgentNode does for your managed contacts. For each one, the assistants answer every text they send, check on them while they are quiet (every few days for a new lead, once a month for one gone cold), and write and send their texts. Each of these uses credits, at the rates on the [pricing page](https://goagentnode.com/pricing). People cost the most in their first days: the assistants start on them straight away, and most get a first text.
@@ -74,7 +84,7 @@ A CSV is a plain spreadsheet file. Every CRM can export one, and so can Google S
     AgentNode works out which column is the name, which is the phone number, and which hold notes it should know about. Check it got them right. It remembers your choices, so the next import of the same layout is one click.
   </Step>
   <Step title="Say what AgentNode should do with them">
-    Turn on **They are new leads** (off to start with) if these people just got in touch with you. Lead Nurture's first text then answers them, and it follows up until they reply or book. Switch on **Managed by AgentNode** (off to start with) to have the assistants start on everyone straight away, new leads or not, so most get a first text. Left off, they are saved as contacts only, which costs nothing while they are quiet. See [What managing costs](#what-managing-costs). **How you know these people** is optional: a line like "past clients" goes on everyone in the file, and the assistants text them the way you would, never as strangers.
+    Turn on **They are new leads** (off to start with) if these people just got in touch with you. Lead Nurture's first text then answers them, and it follows up until they reply or book. Switch on **Managed by AgentNode** (off to start with) to have the assistants start on everyone straight away, new leads or not, so most get a first text. Left off, they are saved as contacts only, which costs nothing while they are quiet. See [What managing costs](#what-managing-costs). **How you know these people** is optional: a line like "past clients" goes on everyone in the file, and the assistants text them the way you would, never as strangers. Turn on **Manually approve the first plan for each lead** to approve each person's first plan before anything is sent to them: see [Approving first plans](#approving-first-plans).
   </Step>
   <Step title="Confirm consent">
     Confirm that these are people you have a prior relationship with. AgentNode saves your confirmation, and texts nobody without it.
@@ -122,6 +132,7 @@ The questions are:
 - **Which tags should they get?** Everyone from your CRM always gets its own tag, such as **Follow Up Boss leads**. Press **Add a tag** to give them more: pick one of your tags, or type a name to make a new one.
 - **Should AgentNode manage them?** It starts on **No**: they are saved as contacts only, and nobody is texted. Choose **Yes** and your assistants look after everyone the import brings in.
 - **Text new people as new leads?** Asked when the answer above is Yes. See [Text new people as new leads](#text-new-people-as-new-leads).
+- **Manually approve the first plan for each lead?** Asked when AgentNode manages them. It starts on **No**. Choose **Yes** to approve each person's first plan before anything is sent to them: see [Approving first plans](#approving-first-plans).
 - **How you know these people** Optional. A line like "past clients from my old brokerage" goes on everyone the import brings in from then on, and the assistants text them the way you would. People already brought in keep what their own page says.
 - **Do you have their permission to text them?** Asked the first time only. Tick the box to confirm that the people you bring in agreed to hear from you by text. Anyone your CRM marks as do not contact is skipped.
 
