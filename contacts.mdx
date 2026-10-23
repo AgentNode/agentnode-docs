@@ -26,9 +26,9 @@ AgentNode never texts a lead before it has a plan for them: which texts the assi
 
 With it on, each lead's first plan waits for you, and nothing reaches them until you approve it. Every plan after that goes ahead on its own, so you are asked once per lead, never again as their plan changes. Leads AgentNode has already texted are past their first plan, so they are not asked about.
 
-Approving a plan is the only yes it needs. Its texts go as planned whatever **Reply for me**, **Confidence** or **Always approve the first text** would otherwise hold back, and one due in quiet hours goes the next morning. A meeting in it is booked without asking you again, and the text confirming it goes too. A text still stops if the lead opts out, you switch Managed off, or the conversation moves on: if the lead writes back before a planned text goes, AgentNode plans again, and that new plan follows your settings as usual.
+Approving a plan is the only yes it needs. Its texts go as planned whatever **Reply for me**, **Confidence** or **Always approve the first text** would otherwise hold back, and one due in quiet hours goes the next morning. A meeting in it is booked without asking you again, and the text confirming it goes too. A text still stops if the lead opts out or you switch Managed off. While AgentNode is paused in their conversation, the plan's texts wait for you in your Inbox instead. If the lead writes back, or another text reaches them first, yours included, AgentNode plans again. That new plan follows your settings as usual.
 
-Plans waiting for you are in your Inbox, on the lead's page, and on their row in **Contacts**, where the **Plan needs approval** filter finds them all. Approve one at a time, or all at once: a big list then starts half a minute apart, so it is not texted in one go. **Undo** takes an approval back while it shows. Want something changed first? **Update plan** tells the assistants, in your words, what to change, and the new plan waits for you too.
+Plans waiting for you are in your Inbox, on the lead's page, and on their row in **Contacts**, where the **Plan needs approval** filter finds them all. Approve one at a time, or all at once: a big list then starts half a minute apart, so it is not texted in one go. A plan that changed since you looked, or that AgentNode is still working on, keeps waiting, and AgentNode says how many did. **Undo** takes an approval back while it shows. Want something changed first? **Update plan** tells the assistants, in your words, what to change, and the new plan waits for you too.
 
 You can also ask for it for just the people one import brings in, with the setting off: a CSV import and each CRM import have their own **Manually approve the first plan for each lead**, off to start with. Switching the setting off later sends nothing that is waiting: those plans still wait for you.
 
@@ -130,7 +130,7 @@ Under **Add an import** are the ones you have not connected yet, each taking you
 
 The questions are:
 
-- **Who should come in from Follow Up Boss?** **New people only** brings anyone your CRM adds from now on. **New people, plus some already in Follow Up Boss** also brings the people you pick, by stage (Follow Up Boss) or tag. **New people, plus everyone already in Follow Up Boss** brings everyone with a mobile number. Most of a CRM is people nobody wants texted, so it starts on new people only.
+- **Import the contacts already in Follow Up Boss?** Either way, new people your CRM adds come in while importing is on. This asks about the people already there. It starts on **No**, because most of a CRM is people nobody wants texted. Choose **Yes** and it asks **Which ones?**: **Everyone** with a mobile number, or **Only some**, picked by stage (Follow Up Boss) or tag.
 - **Which tags should they get?** Everyone from your CRM always gets its own tag, such as **Follow Up Boss leads**. Press **Add a tag** to give them more: pick one of your tags, or type a name to make a new one.
 - **Bring your Smart Lists too?** Follow Up Boss only, asked the first time. Tick **Yes, bring my Smart Lists across** and each becomes a list in AgentNode, with its people. A list like "6 Month Follow Up" tells the assistants when to text them.
 - **Should AgentNode automatically start managing imported contacts?** It starts on **No**: they are saved as contacts only, and nobody is texted. Choose **Yes** and your assistants look after everyone the import brings in. They read what your CRM keeps on each person, such as their timeframe, stage and tags. Someone it has down for later, such as a 6-month follow-up, gets their first text then, not the day they arrive. Someone who has just got in touch still gets a first text straight away: see [Text new people as new leads](#text-new-people-as-new-leads).
@@ -141,7 +141,7 @@ The questions are:
 
 ### Changing an import
 
-Press **Configure** on a CRM's row to change any answer. While the import is on, it also shows what the last check found, and **Check now** checks again.
+Press **Configure** on a CRM's row to change any answer. **Import contacts** has the same **Configure** when you open the CRM in **Settings › Integrations**. While the import is on, both show what the last check found, and **Check now** checks again.
 
 - A tag you add goes on the people already brought in, too. A tag you take off stays on whoever already has it.
 - Changing who comes in never removes anyone already brought in.
@@ -185,7 +185,7 @@ If you buy leads from Prime Listing Leads, they come into Contacts by themselves
 
 If AgentNode finds no account for you, it looks again once a day. To bring it forward, use the same email on both, or email [support@goagentnode.com](mailto:support@goagentnode.com) and we will link them; **Connect Prime Listing Leads** under **Settings › Integrations**, and on the welcome's contacts question, looks now. If you switch the import off or disconnect it, AgentNode leaves it that way.
 
-Under **Configure** on its Auto-import row you can narrow who comes in by status, **Active** or **Credits** (the ones you were credited for), and change the tags and Managed for the leads to come. AgentNode only reads Prime Listing Leads, and never changes anything there.
+Under **Configure**, on its Auto-import row or in Settings › Integrations, you can narrow who comes in by status, **Active** or **Credits** (the ones you were credited for), and change the tags and Managed for the leads to come. AgentNode only reads Prime Listing Leads, and never changes anything there.
 
 ### Text new people as new leads
 
