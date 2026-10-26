@@ -6,7 +6,7 @@ description: "Import leads by CSV, add one person by hand or through Operator, b
 
 Contacts is where everyone you have brought into AgentNode lives, with their tags, whether AgentNode manages them, and their conversation beside them. **Add contacts** is how you add people yourself, by hand or from a CSV file. **Auto-import** is where your CRM and other sources bring people in by themselves.
 
-Sort the list by name or by when AgentNode last contacted someone, and filter it, by **Managed** among other things.
+Sort the list by name or by when AgentNode last contacted someone, and filter it, by **Managed** among other things. Or press **Ask**, the sparkle beside **Add contacts**, and describe who you want, such as "past clients I haven't texted since spring". AgentNode finds them and keeps the search under **Saved searches** in the menu on the left, up to date every time you open it.
 
 **Last contacted** is when AgentNode last texted someone. It stays empty until AgentNode does, even if your CRM or your CSV file says you were in touch before.
 
@@ -45,7 +45,7 @@ So keep Managed on for the people you want AgentNode to work, and off for everyo
 A contact's page holds everything about them, and the conversation with them. Every link to a conversation, such as a question in the Inbox, opens it.
 
 - **About**: their details, including **How you know them**, their birthday and home anniversaries, their **Consent**, **Your note**, any **Details** you added, and the **Summary** AgentNode writes about them (below). Every assistant reads How you know them and your details before it texts them, so it writes the way you would to that person. The assistants read your note too, but never put it in a text.
-- **Overview**: whether AgentNode is managing them, with the **Managed** switch, and their plan: every text the assistants have planned for them, when it goes, which assistant planned it and why. **Revise** or **Delete** any of them, and **Update plan** tells the assistants, in your words, what you want planned or changed. **Also planned** is what else they have lined up, like looking again when they have not replied or asking you whether they came to a meeting.
+- **Overview**: whether AgentNode is managing them, with the **Managed** switch, and their plan: every text the assistants have planned for them, when it goes, which assistant planned it and why. **Revise** or **Delete** any of them, and **Update plan** tells the assistants, in your words, what you want planned or changed. **Upcoming actions** is what else they have lined up, like looking again when they have not replied or asking you whether they came to a meeting.
 - **Conversation**: the whole conversation with them, calls included. Each text says who wrote it: **Automatic** when an assistant sent it on its own, **AI draft** when you sent words AgentNode wrote. A text that did not go says why, with **Retry**. Press the AI logo on one of AgentNode's texts to say what to correct, or why it was wrong.
 - **Notes** and **Files**: only you see notes. AgentNode never reads them, so nothing in one can end up in a text.
 
@@ -118,9 +118,9 @@ Tick several people in the list to add them to a list or a tag, delete them, or 
 
 Auto-import brings people in from your CRM by itself, so you don't have to keep uploading files. New people come in as they are added to your CRM, and once a day AgentNode checks your CRM for anyone it missed. Prime Listing Leads, where you buy leads, is connected for you and checked once a day too: see [Prime Listing Leads](#prime-listing-leads).
 
-The **Auto-import** tab lists the CRMs you have connected: who comes in from each, how many it brought in lately, and the tags it gives everyone it brings in. CSV imports and people added through Operator are not listed here.
+The **Auto-import** tab has a card for each source you have connected: whether it is importing, who comes in, how many new people it brought this week and in all, when it last checked, and the tags it gives everyone it brings in. **View imported people** opens them in Contacts. CSV imports and people added through Operator are not listed here.
 
-Under **Add an import** are the ones you have not connected yet, each taking you to **Settings › Integrations**.
+Under **Add a source** are the ones you have not connected yet, each taking you to **Settings › Integrations**. Your CRM not among them? Export your contacts from it as a CSV and import them once: see [Importing a CSV](#importing-a-csv).
 
 ### Switching an import on
 
@@ -141,7 +141,7 @@ The questions are:
 
 ### Changing an import
 
-Press **Configure** on a CRM's row to change any answer. **Import contacts** has the same **Configure** when you open the CRM in **Settings › Integrations**. While the import is on, both show what the last check found, and **Check now** checks again.
+Press **Configure** on a CRM's card to change any answer. **Import contacts** has the same **Configure** when you open the CRM in **Settings › Integrations**. While the import is on, both show what the last check found, and **Check now** checks again.
 
 - A tag you add goes on the people already brought in, too. A tag you take off stays on whoever already has it.
 - Changing who comes in never removes anyone already brought in.
@@ -168,7 +168,7 @@ GoHighLevel needs one extra step for this. If you would rather not do it yoursel
       In GoHighLevel, open **Automation › Workflows** and create a workflow that starts with **Contact Created**.
     </Step>
     <Step title="Add a webhook">
-      Add a **Webhook** action, set its **Method** to **POST**, and paste the link shown under **Configure** on the GoHighLevel row in Auto-import.
+      Add a **Webhook** action, set its **Method** to **POST**, and paste the link shown under **Configure** on the GoHighLevel card in Auto-import.
     </Step>
     <Step title="Tell it which contact">
       Under **Custom Data**, type `contact_id` in the first box and `{{contact.id}}` in the second, exactly as written here. Then publish the workflow.
@@ -185,7 +185,7 @@ If you buy leads from Prime Listing Leads, they come into Contacts by themselves
 
 If AgentNode finds no account for you, it looks again once a day. To bring it forward, use the same email on both, or email [support@goagentnode.com](mailto:support@goagentnode.com) and we will link them; **Connect Prime Listing Leads** under **Settings › Integrations**, and on the welcome's contacts question, looks now. If you switch the import off or disconnect it, AgentNode leaves it that way.
 
-Under **Configure**, on its Auto-import row or in Settings › Integrations, you can narrow who comes in by status, **Active** or **Credits** (the ones you were credited for), and change the tags and Managed for the leads to come. AgentNode only reads Prime Listing Leads, and never changes anything there.
+Under **Configure**, on its Auto-import card or in Settings › Integrations, you can narrow who comes in by status, **Active** or **Credits** (the ones you were credited for), and change the tags and Managed for the leads to come. AgentNode only reads Prime Listing Leads, and never changes anything there.
 
 ### Text new people as new leads
 
@@ -198,7 +198,7 @@ It only changes who arrives from then on.
 
 ## Tags
 
-A tag is a label on a contact: `#zillow-leads`, `#past-clients`, `#open-house`. A contact can carry as many as you need, one for each context they belong to. Pick a tag under **Tags** in the menu on the left to see only the people who carry it.
+A tag is a label on a contact: `#zillow-leads`, `#past-clients`, `#open-house`. A contact can carry as many as you need, one for each context they belong to. Pick a tag under **Tags** in the menu on the left to see only the people who carry it, or type its name in **Find a list or tag** at the top of the menu.
 
 A job's working preferences can name a tag, so "if #sky-realty, sign off as Sky Realty" applies only to those people. See [Your assistants](/assistants#working-preferences).
 
