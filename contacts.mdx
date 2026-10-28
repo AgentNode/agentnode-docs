@@ -118,9 +118,9 @@ Tick several people in the list to add them to a list or a tag, delete them, or 
 
 Auto-import brings people in from your CRM by itself, so you don't have to keep uploading files. New people come in as they are added to your CRM, and once a day AgentNode checks your CRM for anyone it missed. Prime Listing Leads, where you buy leads, is connected for you and checked once a day too: see [Prime Listing Leads](#prime-listing-leads).
 
-The **Auto-import** tab lists the CRMs you have connected: who comes in from each, how many it brought in lately, and the tags it gives everyone it brings in. CSV imports and people added through Operator are not listed here.
+The **Auto-import** tab has a card for each source you have connected: whether it is importing, who comes in, how many new people it brought this week and in all, when it last checked, and the tags it gives everyone it brings in. **View imported people** opens them in Contacts. CSV imports and people added through Operator are not listed here.
 
-Under **Add an import** are the ones you have not connected yet, each taking you to **Settings › Integrations**.
+Under **Add a source** are the ones you have not connected yet, each taking you to **Settings › Integrations**. Your CRM not among them? Export your contacts from it as a CSV and import them once: see [Importing a CSV](#importing-a-csv).
 
 ### Switching an import on
 
@@ -141,7 +141,7 @@ The questions are:
 
 ### Changing an import
 
-Press **Configure** on a CRM's row to change any answer. **Import contacts** has the same **Configure** when you open the CRM in **Settings › Integrations**. While the import is on, both show what the last check found, and **Check now** checks again.
+Press **Configure** on a CRM's card to change any answer. **Import contacts** has the same **Configure** when you open the CRM in **Settings › Integrations**. While the import is on, both show what the last check found, and **Check now** checks again.
 
 - A tag you add goes on the people already brought in, too. A tag you take off stays on whoever already has it.
 - Changing who comes in never removes anyone already brought in.
@@ -168,7 +168,7 @@ GoHighLevel needs one extra step for this. If you would rather not do it yoursel
       In GoHighLevel, open **Automation › Workflows** and create a workflow that starts with **Contact Created**.
     </Step>
     <Step title="Add a webhook">
-      Add a **Webhook** action, set its **Method** to **POST**, and paste the link shown under **Configure** on the GoHighLevel row in Auto-import.
+      Add a **Webhook** action, set its **Method** to **POST**, and paste the link shown under **Configure** on the GoHighLevel card in Auto-import.
     </Step>
     <Step title="Tell it which contact">
       Under **Custom Data**, type `contact_id` in the first box and `{{contact.id}}` in the second, exactly as written here. Then publish the workflow.
@@ -182,10 +182,13 @@ If you buy leads from Prime Listing Leads, they come into Contacts by themselves
 
 - The leads already in Prime Listing Leads when it connects come in tagged **Old lead** beside **Prime Listing Leads**, and **not managed**: your assistants do not text them as if they had just got in touch. Switch Managed on for any you want looked after.
 - The leads you buy from then on come in with the once-a-day check, tagged **New lead** and **managed**, so AgentNode looks after them from the start. Nobody gets a first text just for arriving, so **Text new people as new leads?** is not asked.
+- Each lead's notes from Prime Listing Leads come in too. Your assistants read them in the background before they text the lead, and never quote them. They are not added to the contact's **Notes**: you see them in Prime Listing Leads.
+- Each lead's address comes in with them.
+- Every lead from Prime Listing Leads is a seller. Your assistants know the address is the home they are thinking of selling, and never ask whether they are buying or selling.
 
 If AgentNode finds no account for you, it looks again once a day. To bring it forward, use the same email on both, or email [support@goagentnode.com](mailto:support@goagentnode.com) and we will link them; **Connect Prime Listing Leads** under **Settings › Integrations**, and on the welcome's contacts question, looks now. If you switch the import off or disconnect it, AgentNode leaves it that way.
 
-Under **Configure**, on its Auto-import row or in Settings › Integrations, you can narrow who comes in by status, **Active** or **Credits** (the ones you were credited for), and change the tags and Managed for the leads to come. AgentNode only reads Prime Listing Leads, and never changes anything there.
+Under **Configure**, on its Auto-import card or in Settings › Integrations, you can narrow who comes in by status, **Active** or **Credits** (the ones you were credited for), and change the tags and Managed for the leads to come. AgentNode only reads Prime Listing Leads, and never changes anything there.
 
 ### Text new people as new leads
 
@@ -198,7 +201,7 @@ It only changes who arrives from then on.
 
 ## Tags
 
-A tag is a label on a contact: `#zillow-leads`, `#past-clients`, `#open-house`. A contact can carry as many as you need, one for each context they belong to. Pick a tag under **Tags** in the menu on the left to see only the people who carry it.
+A tag is a label on a contact: `#zillow-leads`, `#past-clients`, `#open-house`. A contact can carry as many as you need, one for each context they belong to. Pick a tag under **Tags** in the menu on the left to see only the people who carry it, or type its name in **Find a list or tag** at the top of the menu.
 
 A job's working preferences can name a tag, so "if #sky-realty, sign off as Sky Realty" applies only to those people. See [Your assistants](/assistants#working-preferences).
 
