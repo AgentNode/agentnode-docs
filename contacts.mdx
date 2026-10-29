@@ -83,10 +83,14 @@ A CSV is a plain spreadsheet file. Every CRM can export one, and so can Google S
     Press **Add contacts** in Contacts, then **Import from CSV**, and choose the file. Or send the file to [Operator](/operator) with "import these new leads".
   </Step>
   <Step title="Check the columns">
-    AgentNode works out which column is the name, which is the phone number, and which hold notes it should know about. Check it got them right. It remembers your choices, so the next import of the same layout is one click.
+    AgentNode works out which column is the name, which is the phone number, and which are the email, address, source, tags, birthday, home purchase date and note. Check it got them right. Every other column with something in it is kept for AgentNode to read, such as "Timeframe: 6-12 months": the assistants take it into account, never quote it in a text, and it does not show on the contact's page. Up to 30 columns are kept this way; set any you don't need to **Do not import**.
   </Step>
   <Step title="Say what AgentNode should do with them">
-    Turn on **They are new leads** (off to start with) if these people just got in touch with you. Lead Nurture's first text then answers them, and it follows up until they reply or book. Switch on **Managed by AgentNode** (off to start with) to have the assistants start on everyone straight away, new leads or not, so most get a first text. Left off, they are saved as contacts only, which costs nothing while they are quiet. See [What managing costs](#what-managing-costs). **How you know these people** is optional: a line like "past clients" goes on everyone in the file, and the assistants text them the way you would, never as strangers. Turn on **Manually approve the first plan for each lead** to approve each person's first plan before anything is sent to them: see [Approving first plans](#approving-first-plans).
+    Answer **Should AgentNode automatically start managing imported contacts?** It starts on **No**. **Yes** has the assistants start on everyone straight away, so most get a first text. **No** saves them as contacts only, which costs nothing while they are quiet. See [What managing costs](#what-managing-costs).
+
+    With **Yes**, two more questions. **Text them as new leads?** (**No** to start with): say **Yes** if these people just got in touch with you, and Lead Nurture's first text answers them and follows up until they reply or book. **Manually approve the first plan for each lead?** (**No** to start with): say **Yes** to approve each person's first plan before anything is sent to them. See [Approving first plans](#approving-first-plans).
+
+    **How you know these people** is optional: a line like "past clients" goes on everyone in the file, and the assistants text them the way you would, never as strangers.
   </Step>
   <Step title="Confirm consent">
     Confirm that these are people you have a prior relationship with. AgentNode saves your confirmation, and texts nobody without it.
@@ -94,7 +98,7 @@ A CSV is a plain spreadsheet file. Every CRM can export one, and so can Google S
 </Steps>
 
 <Note>
-  AgentNode removes duplicates. If a phone number is already in your contacts, it does not create a second record, so you can upload an updated copy of the same list.
+  If a phone number is already in your contacts, AgentNode skips that row and leaves the contact as it is, so uploading the same list twice does not create doubles.
 </Note>
 
 ## Adding a single contact
