@@ -10,7 +10,7 @@ Guardrails are the boundaries that tell an assistant when to keep going and when
 
 <CardGroup cols={2}>
   <Card title="Sensitive topic" icon="shield">
-    The lead raises a subject that needs a licensed professional's answer, such as price, offers and contracts, commission, legal questions, or property condition.
+    The lead raises a subject that needs a licensed professional's answer, such as an offer on the table, contracts, commission, legal questions, or property condition.
   </Card>
   <Card title="Not sure enough" icon="circle-question">
     The lead asks something the assistant cannot answer with confidence, from the conversation, the lead's record and what you have told it. Rather than guess, it brings the question to you.
@@ -22,6 +22,8 @@ Guardrails are the boundaries that tell an assistant when to keep going and when
     The lead asks whether this is a bot, or tests it with something only a person could answer. They hear from you next, never from AgentNode.
   </Card>
 </CardGroup>
+
+A lead who names a price, or asks what their home is worth, is not handed off. That lead is ready to talk, so the assistant keeps the conversation going and works toward getting them on a call with you. It never settles what the home should sell for in a text.
 
 ## How escalation works
 
