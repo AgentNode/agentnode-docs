@@ -19,6 +19,7 @@ Operator says how many contacts AgentNode is managing, and asks you to tell it a
 - **Text a lead in quiet hours** (9 PM to 8 AM, your time or the lead's, going by their area code) and Operator shows you the words and asks first: send now, or when quiet hours end. A text it holds waits in the lead's conversation and goes between 8 and 8:30 AM; Operator tells you the time. If the lead writes before you answer, Operator writes the text again and asks again.
 - **Text a group**, like "Text everyone in San Diego about my open house on Saturday", and Operator tells you how many people that is and about what it costs, then waits for your yes. It texts them a few at a time as a job on the **Jobs** tab, writing each text to fit that person's conversation. Anyone whose conversation had a text in the last day, or is waiting on you, is skipped so they are not texted twice. The job says how many it skipped, and names the first three. Anyone on another job with the same words, whether it is going, switched off or finished in the last month, is left to that job, so nobody gets them twice. Tell it to stop, or switch the job off, and nobody else is texted.
 - **Try something new** in Lead Nurture's texts: "Split test a soft pitch against asking for a call" adds an outreach experiment for each, tried in a few of its new texts and compared with your usual ones. Ask how they are doing, or to turn one off. See [Outreach experiments](/assistants#outreach-experiments).
+- **Set your first text**, the one every lead nobody has texted gets: "Make my first text: Hi \{name\}, it's Jordan. Still thinking of selling?" See [Your first text](#your-first-text).
 - **Pass on news** about a lead and the assistants whose jobs it concerns act on it: "Pat is ready to look again in the spring", "Jo didn't show up to the viewing".
 - **Work in your CRM**: with Follow Up Boss or GoHighLevel connected, Operator searches it and reads a person's whole record there: "Who in Follow Up Boss is tagged Relocation?" Ask and it adds a note, puts a tag on or takes one off, or adds a task there. Before it puts someone on a Follow Up Boss action plan or a GoHighLevel workflow, it tells you which one and waits for your yes, and it never does for anyone who opted out or is marked do not contact. Each part has its own switch on the CRM under **Settings › Integrations**: **Operator search** for looking things up, **Operator updates** for changes. See [What your CRM is used for](/settings#what-your-crm-is-used-for).
 - **Show** it photos, screenshots and files, up to twenty with a message, five of them photos. Operator reads them along with what you write: "add her" with a contact card, "draft him a reply" with a lead's email, "book this" with a showing request. Send a contact card or a lead notification on its own and Operator adds the person on it. See [Adding a single contact](/contacts#adding-a-single-contact).
@@ -28,6 +29,18 @@ Operator says how many contacts AgentNode is managing, and asks you to tell it a
 Before it does anything it cannot take back, such as switching **Managed** for a whole group or starting one of your CRM's automations, Operator tells you what it is about to do and waits for your yes.
 
 From **Contacts**, tick people and press **Send to Operator** to tell it what to do with them.
+
+## Your first text
+
+The first text to anyone nobody has texted yet is always the same, word for word, with their first name where you write `{name}`. AgentNode writes nothing for it, so adding thousands of contacts at once costs nothing in AI. From the second text on, the follow-ups and every reply are written for that lead.
+
+Until you set your own, AgentNode sends its own: "Hi \{name\}, it's Jordan. What do you have in mind for your home? Happy to help however I can." Tell Operator what to say instead:
+
+- **For everyone**: "Make my first text: Hi \{name\}, it's Jordan with Harbor Realty. Still thinking of selling?"
+- **For a tag, a source or a list**: "Zillow leads get: Hi \{name\}, saw your request on Zillow. Good time to chat?" Operator says how many contacts that finds and how it reads to one of them. A lead found by more than one gets the newest.
+- **To see them**, ask "What are my first texts?" To take one off, ask, and Operator waits for your yes. Its leads then get the one for everyone.
+
+Only the first name is filled in. If AgentNode is not sure of it, such as for a couple or a contact with only a number, the text goes without it: "Hi, it's Jordan." A first text already planned keeps its words when you change yours.
 
 ## The Inbox preview
 
