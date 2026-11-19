@@ -10,9 +10,9 @@ Real estate agents who are not technical. Assume no knowledge of software terms.
 Every page should make sense to someone who has never heard of a CSV, an API
 key or a webhook.
 
-## Files the app uses
+## Videos
 
-`videos/agentnode-in-2-minutes.mp4` and its poster, `videos/agentnode-in-2-minutes.jpg`, are also played by the app, on Operator (`apps/web/src/lib/videos.ts` in `AgentNode/app`). Keep their names: a new cut replaces the files. Mintlify serves files under 20 MB only.
+Embed a video from the app's edge, never from this repo: Mintlify sends a video whole, and Safari plays only what is served in byte ranges. *AgentNode in 2 minutes* is the app's `apps/web/public/videos/agentnode-in-2-minutes.mp4`, embedded from `https://goagentnode.com/videos/agentnode-in-2-minutes.mp4`, with its poster beside it.
 
 ## Keep it true to the product
 
