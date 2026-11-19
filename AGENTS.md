@@ -10,6 +10,10 @@ Real estate agents who are not technical. Assume no knowledge of software terms.
 Every page should make sense to someone who has never heard of a CSV, an API
 key or a webhook.
 
+## Files the app uses
+
+`videos/agentnode-in-2-minutes.mp4` and its poster, `videos/agentnode-in-2-minutes.jpg`, are also played by the app, on Operator (`apps/web/src/lib/videos.ts` in `AgentNode/app`). Keep their names: a new cut replaces the files. Mintlify serves files under 20 MB only.
+
 ## Keep it true to the product
 
 The app lives in the `AgentNode/app` repo. Before naming a button, a screen or
